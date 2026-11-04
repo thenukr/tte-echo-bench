@@ -1,0 +1,377 @@
+{
+  "section": "interatrial_septum",
+  "title": "Interatrial Septum",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "structure": {
+      "question": "Structural abnormalities",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal_intact",
+        "abnormal",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "structural_abnormality": {
+      "question": "Interatrial septum: abnormality (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "lipomatous_hypertrophy",
+        "aneurysmal_septum",
+        "bowing",
+        "patent_foramen_ovale",
+        "atrial_septal_defect",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structure": "abnormal"
+      },
+      "answer": []
+    },
+    "bowing_direction": {
+      "question": "Interatrial septum: bowing direction",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "toward_the_left_atrium",
+        "toward_the_right_atrium",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structural_abnormality": "bowing"
+      },
+      "answer": null
+    },
+    "asd_type": {
+      "question": "Atrial septal defect: type",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "secundum",
+        "primum",
+        "sinus_venosus",
+        "coronary_sinus",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structural_abnormality": "atrial_septal_defect"
+      },
+      "answer": null
+    },
+    "structural_abnormalities_acuity": {
+      "question": "Interatrial septum structural abnormalities: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "communication_in_report": {
+      "question": "Interatrial septal communications: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "communication": {
+      "question": "Interatrial septal communication",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "present",
+        "absent",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "communication_in_report": "yes"
+      },
+      "answer": null
+    },
+    "communication_type": {
+      "question": "Interatrial septal communication: type",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "patent_foramen_ovale",
+        "secundum_atrial_septal_defect",
+        "primum_atrial_septal_defect",
+        "sinus_venosus_defect",
+        "coronary_sinus_defect",
+        "fenestrated_or_multiple_defects",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "communication_in_report": "yes"
+      },
+      "answer": null
+    },
+    "communication_size": {
+      "question": "Interatrial septal communication: size (largest dimension)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "less_than_0_5_cm",
+        "0_5_0_9_cm",
+        "1_0_1_9_cm",
+        "2_0_2_9_cm",
+        "3_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "communication_in_report": "yes"
+      },
+      "answer": null
+    },
+    "communication_type_other_description": {
+      "question": "Interatrial septal communication: type: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if": {
+        "communication_type": "other"
+      },
+      "answer": null
+    },
+    "communication_acuity": {
+      "question": "Interatrial septal communications: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "communication_in_report": "yes"
+      },
+      "answer": null
+    },
+    "device_in_report": {
+      "question": "Interatrial septal devices: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "device_type": {
+      "question": "Atrial septal device: type",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "amplatzer_septal_occluder_asd",
+        "amplatzer_pfo_occluder",
+        "gore_cardioform_occluder",
+        "surgical_patch_or_suture_closure",
+        "other",
+        "cannot_identify"
+      ],
+      "option_labels": {
+        "cannot_identify": "Cannot identify from present data"
+      },
+      "only_if": {
+        "device_in_report": "yes"
+      },
+      "answer": null
+    },
+    "device_size": {
+      "question": "Atrial septal device: size (mm)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "less_than_10_mm",
+        "10_19_mm",
+        "20_29_mm",
+        "30_39_mm",
+        "40_mm_or_more",
+        "not_determinable"
+      ],
+      "option_labels": {
+        "not_determinable": "Not determinable from present data"
+      },
+      "only_if": {
+        "device_in_report": "yes"
+      },
+      "answer": null
+    },
+    "device_type_other_description": {
+      "question": "Atrial septal device: type: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if": {
+        "device_type": "other"
+      },
+      "answer": null
+    },
+    "device_pathologic_findings": {
+      "question": "Atrial septal device: pathologic findings (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "none",
+        "device_malposition",
+        "peri_device_leak",
+        "thrombus_on_device",
+        "not_adequately_visualized",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "device_in_report": "yes"
+      },
+      "answer": []
+    },
+    "device_acuity": {
+      "question": "Interatrial septal devices: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "device_in_report": "yes"
+      },
+      "answer": null
+    },
+    "shunt_in_report": {
+      "question": "Interatrial shunt: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Shunt",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "shunt_direction": {
+      "question": "Interatrial shunt: direction",
+      "type": "single",
+      "subsection": "Shunt",
+      "options": [
+        "left_to_right",
+        "right_to_left",
+        "bidirectional",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "shunt_in_report": "yes"
+      },
+      "answer": null
+    },
+    "shunt_location": {
+      "question": "Interatrial shunt: location",
+      "type": "single",
+      "subsection": "Shunt",
+      "options": [
+        "intracardiac",
+        "intrapulmonary",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "shunt_in_report": "yes"
+      },
+      "answer": null
+    },
+    "shunt_detection_technique": {
+      "question": "Interatrial shunt: detection technique (select all that apply)",
+      "type": "multi",
+      "subsection": "Shunt",
+      "options": [
+        "color_flow_doppler",
+        "agitated_saline",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "shunt_in_report": "yes"
+      },
+      "answer": []
+    },
+    "shunt_qp_qs": {
+      "question": "Interatrial shunt: Qp:Qs",
+      "type": "single",
+      "subsection": "Shunt",
+      "optional": true,
+      "options": [
+        "less_than_1_0",
+        "1_0_1_2",
+        "1_3_1_4",
+        "1_5_1_9",
+        "2_0_2_4",
+        "2_5_2_9",
+        "3_0_or_more",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "less_than_1_0": "Less than 1.0 (net right-to-left)"
+      },
+      "only_if": {
+        "shunt_in_report": "yes"
+      },
+      "answer": null
+    },
+    "shunt_acuity": {
+      "question": "Interatrial shunt: acuity of finding",
+      "type": "single",
+      "subsection": "Shunt",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "shunt_in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}

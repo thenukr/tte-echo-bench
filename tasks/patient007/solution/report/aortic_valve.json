@@ -1,0 +1,360 @@
+{
+  "section": "aortic_valve",
+  "title": "Aortic Valve",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "structure": {
+      "question": "Aortic valve structure",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "structurally_normal",
+        "structurally_abnormal",
+        "cannot_evaluate"
+      ],
+      "answer": "structurally_normal"
+    },
+    "number_of_leaflets": {
+      "question": "Aortic valve: number of leaflets",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "options": [
+        "trileaflet",
+        "bicuspid",
+        "unicuspid",
+        "quadricuspid",
+        "not_determined",
+        "cannot_evaluate"
+      ],
+      "answer": "trileaflet"
+    },
+    "structure_acuity": {
+      "question": "Aortic valve structure: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "structural_abnormalities_in_report": {
+      "question": "Aortic valve structural abnormalities: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "structural_abnormality": {
+      "question": "Aortic valve: structural abnormality (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "bicuspid",
+        "unicuspid",
+        "quadricuspid",
+        "thickening",
+        "annular_calcification",
+        "valvular_calcification",
+        "perforation",
+        "mass_or_vegetation",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structural_abnormalities_in_report": "yes"
+      },
+      "answer": null
+    },
+    "structural_abnormality_other_description": {
+      "question": "Aortic valve: structural abnormality: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "structural_abnormality": "other"
+      },
+      "answer": null
+    },
+    "bicuspid_type": {
+      "question": "Bicuspid aortic valve: type",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "type_0_no_raphe",
+        "type_1_one_raphe",
+        "type_2_two_raphes",
+        "not_determined",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structural_abnormality": "bicuspid"
+      },
+      "answer": null
+    },
+    "suspected_etiology": {
+      "question": "Aortic valve: suspected etiology",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "degenerative_calcific",
+        "congenital",
+        "rheumatic",
+        "endocarditis",
+        "other",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structural_abnormalities_in_report": "yes"
+      },
+      "answer": null
+    },
+    "suspected_etiology_other_description": {
+      "question": "Aortic valve: suspected etiology: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "suspected_etiology": "other"
+      },
+      "answer": null
+    },
+    "structural_abnormalities_acuity": {
+      "question": "Aortic valve structural abnormalities: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "structural_abnormalities_in_report": "yes"
+      },
+      "answer": null
+    },
+    "abnormal_motion_in_report": {
+      "question": "Aortic valve abnormal motion: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "abnormal_motion": {
+      "question": "Aortic valve: abnormal motion (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "restricted_leaflet_motion",
+        "doming",
+        "eccentric_closure",
+        "flail",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "abnormal_motion_in_report": "yes"
+      },
+      "answer": null
+    },
+    "abnormal_motion_acuity": {
+      "question": "Aortic valve abnormal motion: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "abnormal_motion_in_report": "yes"
+      },
+      "answer": null
+    },
+    "stenosis_in_report": {
+      "question": "Aortic stenosis: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Function: Stenosis",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "stenosis_severity": {
+      "question": "Aortic stenosis severity",
+      "type": "single",
+      "subsection": "Function: Stenosis",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "very_severe",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "stenosis_in_report": "yes"
+      },
+      "answer": null
+    },
+    "stenosis_mechanism": {
+      "question": "Aortic stenosis: mechanism",
+      "type": "single",
+      "subsection": "Function: Stenosis",
+      "optional": true,
+      "options": [
+        "calcific_degenerative",
+        "bicuspid",
+        "rheumatic",
+        "subvalvular",
+        "supravalvular",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "stenosis_in_report": "yes"
+      },
+      "answer": null
+    },
+    "stenosis_mechanism_other_description": {
+      "question": "Aortic stenosis: mechanism: describe 'Other'",
+      "type": "text",
+      "subsection": "Function: Stenosis",
+      "only_if": {
+        "stenosis_mechanism": "other"
+      },
+      "answer": null
+    },
+    "stenosis_acuity": {
+      "question": "Aortic stenosis: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Stenosis",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "stenosis_in_report": "yes"
+      },
+      "answer": null
+    },
+    "regurgitation": {
+      "question": "Aortic regurgitation",
+      "type": "single",
+      "subsection": "Function: Regurgitation",
+      "options": [
+        "absent",
+        "present",
+        "cannot_evaluate"
+      ],
+      "answer": "present"
+    },
+    "regurgitation_severity": {
+      "question": "Aortic regurgitation severity",
+      "type": "single",
+      "subsection": "Function: Regurgitation",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "trivial",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "mild"
+    },
+    "regurgitation_mechanism": {
+      "question": "Aortic regurgitation: mechanism",
+      "type": "single",
+      "subsection": "Function: Regurgitation",
+      "optional": true,
+      "options": [
+        "degenerative",
+        "bicuspid",
+        "aortic_root_dilatation",
+        "prolapse",
+        "perforation",
+        "rheumatic",
+        "endocarditis",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "regurgitation": "present"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "regurgitation_mechanism_other_description": {
+      "question": "Aortic regurgitation: mechanism: describe 'Other'",
+      "type": "text",
+      "subsection": "Function: Regurgitation",
+      "only_if": {
+        "regurgitation_mechanism": "other"
+      },
+      "answer": null
+    },
+    "regurgitation_acuity": {
+      "question": "Aortic regurgitation: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Regurgitation",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    }
+  }
+}

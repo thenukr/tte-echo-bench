@@ -1,0 +1,201 @@
+{
+  "section": "inferior_vena_cava",
+  "title": "Inferior Vena Cava",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "size": {
+      "question": "Inferior vena cava size",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "dilated",
+        "small",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "respiratory_change": {
+      "question": "Inferior vena cava respiratory change",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "collapses_more_than_50_pct",
+        "collapses_less_than_50_pct",
+        "no_respiratory_change",
+        "not_assessable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "estimated_ra_pressure": {
+      "question": "Estimated right atrial pressure",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "3_mmhg_0_5",
+        "8_mmhg_5_10",
+        "15_mmhg_10_20",
+        "not_estimable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "size_and_ra_pressure_acuity": {
+      "question": "Inferior vena cava size and right atrial pressure: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "mass_or_device_in_report": {
+      "question": "Inferior vena cava masses or devices: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "mass_or_device": {
+      "question": "Inferior vena cava: mass or device (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "catheter",
+        "device_lead",
+        "thrombus",
+        "mass",
+        "filter",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "mass_or_device_in_report": "yes"
+      },
+      "answer": []
+    },
+    "mass_or_device_other_description": {
+      "question": "Inferior vena cava: mass or device: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "mass_or_device": "other"
+      },
+      "answer": null
+    },
+    "mass_or_device_location": {
+      "question": "Inferior vena cava: mass or device location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "intrahepatic_ivc",
+        "ivc_right_atrial_junction",
+        "extending_into_the_right_atrium",
+        "infrahepatic_ivc",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "mass_or_device_in_report": "yes"
+      },
+      "answer": null
+    },
+    "mass_or_device_location_other_description": {
+      "question": "Inferior vena cava: mass or device location: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if": {
+        "mass_or_device_location": "other"
+      },
+      "answer": null
+    },
+    "mass_or_device_acuity": {
+      "question": "Inferior vena cava masses or devices: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "mass_or_device_in_report": "yes"
+      },
+      "answer": null
+    },
+    "hepatic_vein_flow_pattern_in_report": {
+      "question": "Hepatic vein flow pattern: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Physiology",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "hepatic_vein_flow_pattern": {
+      "question": "Hepatic vein flow pattern",
+      "type": "single",
+      "subsection": "Physiology",
+      "options": [
+        "normal",
+        "systolic_blunting",
+        "systolic_reversal",
+        "expiratory_diastolic_flow_reversal_constriction",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "hepatic_vein_flow_pattern_in_report": "yes"
+      },
+      "answer": null
+    },
+    "hepatic_vein_flow_pattern_acuity": {
+      "question": "Hepatic vein flow pattern: acuity of finding",
+      "type": "single",
+      "subsection": "Physiology",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "hepatic_vein_flow_pattern_in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}

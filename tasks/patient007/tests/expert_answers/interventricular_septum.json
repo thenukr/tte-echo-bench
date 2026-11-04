@@ -1,0 +1,259 @@
+{
+  "section": "interventricular_septum",
+  "note": "Expert answers per field. For 'single' fields each expert lists every option they would accept as correct (an accepted range). For 'multi' fields each expert lists the set they selected. null = field not shown to that expert (its only_if condition was not met); [] or \"\" = shown but left blank (only possible for optional questions).",
+  "experts": [
+    "expert_1",
+    "expert_2",
+    "expert_3",
+    "expert_4",
+    "expert_5",
+    "expert_6",
+    "expert_7"
+  ],
+  "fields": {
+    "vsd_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "vsd_type": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "vsd_size": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "vsd_number": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "vsd_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    },
+    "abnormal_septal_motion_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "abnormal_septal_motion_type": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "abnormal_septal_motion_reason": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "abnormal_septal_motion_reason_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "abnormal_septal_motion_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    },
+    "shunt_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "shunt_direction": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "shunt_detection_technique": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "shunt_peak_gradient": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "shunt_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    }
+  }
+}

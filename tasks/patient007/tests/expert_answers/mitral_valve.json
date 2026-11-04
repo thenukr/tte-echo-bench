@@ -1,0 +1,418 @@
+{
+  "section": "mitral_valve",
+  "note": "Expert answers per field. For 'single' fields each expert lists every option they would accept as correct (an accepted range). For 'multi' fields each expert lists the set they selected. null = field not shown to that expert (its only_if condition was not met); [] or \"\" = shown but left blank (only possible for optional questions).",
+  "experts": [
+    "expert_1",
+    "expert_2",
+    "expert_3",
+    "expert_4",
+    "expert_5",
+    "expert_6",
+    "expert_7"
+  ],
+  "fields": {
+    "structure": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "structurally_normal"
+        ],
+        "expert_2": [
+          "structurally_normal"
+        ],
+        "expert_3": [
+          "structurally_normal"
+        ],
+        "expert_4": [
+          "structurally_normal"
+        ],
+        "expert_5": [
+          "structurally_abnormal"
+        ],
+        "expert_6": [
+          "structurally_normal"
+        ],
+        "expert_7": [
+          "structurally_normal"
+        ]
+      }
+    },
+    "structure_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "routine"
+        ],
+        "expert_2": [
+          "routine"
+        ],
+        "expert_3": [
+          "routine"
+        ],
+        "expert_4": [
+          "routine"
+        ],
+        "expert_5": [
+          "significant"
+        ],
+        "expert_6": [
+          "routine"
+        ],
+        "expert_7": [
+          "routine"
+        ]
+      }
+    },
+    "structural_abnormalities_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "yes"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "structural_abnormality": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": [
+          "annular_calcification"
+        ],
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "structural_abnormality_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "leaflet_involved": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": [
+          "cannot_evaluate"
+        ],
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "suspected_etiology": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": [
+          "degenerative_calcific",
+          "functional"
+        ],
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "suspected_etiology_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "structural_abnormalities_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": [
+          "significant"
+        ],
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "abnormal_motion_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "yes"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "abnormal_motion": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": [
+          "systolic_anterior_motion"
+        ],
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "abnormal_motion_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": [
+          "significant"
+        ],
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "stenosis_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "stenosis_severity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "stenosis_mechanism": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "stenosis_mechanism_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "stenosis_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "regurgitation": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "present"
+        ],
+        "expert_2": [
+          "absent"
+        ],
+        "expert_3": [
+          "present"
+        ],
+        "expert_4": [
+          "present"
+        ],
+        "expert_5": [
+          "present"
+        ],
+        "expert_6": [
+          "present"
+        ],
+        "expert_7": [
+          "present"
+        ]
+      }
+    },
+    "regurgitation_severity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "mild"
+        ],
+        "expert_2": [
+          "not_applicable"
+        ],
+        "expert_3": [
+          "mild"
+        ],
+        "expert_4": [
+          "mild",
+          "moderate"
+        ],
+        "expert_5": [
+          "severe"
+        ],
+        "expert_6": [
+          "mild"
+        ],
+        "expert_7": [
+          "trivial"
+        ]
+      }
+    },
+    "regurgitation_mechanism": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "cannot_evaluate"
+        ],
+        "expert_2": null,
+        "expert_3": [
+          "primary_degenerative"
+        ],
+        "expert_4": [
+          "primary_degenerative"
+        ],
+        "expert_5": [
+          "secondary_functional"
+        ],
+        "expert_6": [
+          "primary_degenerative"
+        ],
+        "expert_7": [
+          "cannot_evaluate"
+        ]
+      }
+    },
+    "regurgitation_mechanism_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "regurgitation_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "routine"
+        ],
+        "expert_2": [
+          "routine"
+        ],
+        "expert_3": [
+          "significant",
+          "routine"
+        ],
+        "expert_4": [
+          "significant"
+        ],
+        "expert_5": [
+          "significant"
+        ],
+        "expert_6": [
+          "routine"
+        ],
+        "expert_7": [
+          "routine"
+        ]
+      }
+    }
+  }
+}

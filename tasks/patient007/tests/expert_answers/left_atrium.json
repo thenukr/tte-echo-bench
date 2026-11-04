@@ -1,0 +1,601 @@
+{
+  "section": "left_atrium",
+  "note": "Expert answers per field. For 'single' fields each expert lists every option they would accept as correct (an accepted range). For 'multi' fields each expert lists the set they selected. null = field not shown to that expert (its only_if condition was not met); [] or \"\" = shown but left blank (only possible for optional questions).",
+  "experts": [
+    "expert_1",
+    "expert_2",
+    "expert_3",
+    "expert_4",
+    "expert_5",
+    "expert_6",
+    "expert_7"
+  ],
+  "fields": {
+    "size": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "dilated"
+        ],
+        "expert_2": [
+          "normal"
+        ],
+        "expert_3": [
+          "cannot_evaluate"
+        ],
+        "expert_4": [
+          "dilated"
+        ],
+        "expert_5": [
+          "dilated"
+        ],
+        "expert_6": [
+          "dilated"
+        ],
+        "expert_7": [
+          "normal"
+        ]
+      }
+    },
+    "size_severity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "mild"
+        ],
+        "expert_2": [
+          "not_applicable"
+        ],
+        "expert_3": [
+          "cannot_evaluate"
+        ],
+        "expert_4": [
+          "mild"
+        ],
+        "expert_5": [
+          "severe"
+        ],
+        "expert_6": [
+          "mild"
+        ],
+        "expert_7": [
+          "not_applicable"
+        ]
+      }
+    },
+    "size_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "routine"
+        ],
+        "expert_2": [
+          "routine"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "routine"
+        ],
+        "expert_5": [
+          "significant"
+        ],
+        "expert_6": [
+          "routine"
+        ],
+        "expert_7": [
+          "routine"
+        ]
+      }
+    },
+    "intracavitary_mass_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "intracavitary_mass_etiology": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_location": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_size": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_echogenicity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_shape": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_mobility": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "laa_mass_etiology": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_location": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_size": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_echogenicity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_shape": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_mobility": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_mass_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_sec_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "laa_sec_grade": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "laa_sec_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    },
+    "laa_device_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "laa_device_type": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_identify"
+        ],
+        "expert_7": null
+      }
+    },
+    "laa_device_size": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_determinable"
+        ],
+        "expert_7": null
+      }
+    },
+    "laa_device_type_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "laa_device_pathologic_findings": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "laa_device_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    },
+    "pulmonary_vein_flow_pattern_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "pulmonary_vein_flow_pattern": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "pulmonary_vein_flow_pattern_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    },
+    "strain_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "strain": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "reservoir_strain_value": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "strain_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    }
+  }
+}

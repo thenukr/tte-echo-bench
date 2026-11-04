@@ -1,0 +1,361 @@
+{
+  "section": "pericardium",
+  "note": "Expert answers per field. For 'single' fields each expert lists every option they would accept as correct (an accepted range). For 'multi' fields each expert lists the set they selected. null = field not shown to that expert (its only_if condition was not met); [] or \"\" = shown but left blank (only possible for optional questions).",
+  "experts": [
+    "expert_1",
+    "expert_2",
+    "expert_3",
+    "expert_4",
+    "expert_5",
+    "expert_6",
+    "expert_7"
+  ],
+  "fields": {
+    "structure": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "normal"
+        ],
+        "expert_2": [
+          "normal"
+        ],
+        "expert_3": [
+          "normal"
+        ],
+        "expert_4": [
+          "normal"
+        ],
+        "expert_5": [
+          "normal"
+        ],
+        "expert_6": [
+          "normal"
+        ],
+        "expert_7": [
+          "normal"
+        ]
+      }
+    },
+    "structural_abnormality": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "structural_abnormality_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "structure_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "routine"
+        ],
+        "expert_2": [
+          "routine"
+        ],
+        "expert_3": [
+          "routine"
+        ],
+        "expert_4": [
+          "routine"
+        ],
+        "expert_5": [
+          "routine"
+        ],
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": [
+          "routine"
+        ]
+      }
+    },
+    "effusion": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "absent"
+        ],
+        "expert_2": [
+          "absent"
+        ],
+        "expert_3": [
+          "absent"
+        ],
+        "expert_4": [
+          "present"
+        ],
+        "expert_5": [
+          "present"
+        ],
+        "expert_6": [
+          "absent"
+        ],
+        "expert_7": [
+          "absent"
+        ]
+      }
+    },
+    "effusion_size": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "not_applicable"
+        ],
+        "expert_2": [
+          "not_applicable"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "small"
+        ],
+        "expert_5": [
+          "small"
+        ],
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": [
+          "not_applicable"
+        ]
+      }
+    },
+    "effusion_measurement": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": [
+          "less_than_0_5_cm"
+        ],
+        "expert_5": [
+          "1_0_1_4_cm"
+        ],
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "effusion_location": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "not_applicable"
+        ],
+        "expert_2": [
+          "not_applicable"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "localized_near_the_la"
+        ],
+        "expert_5": [
+          "localized_near_the_rv"
+        ],
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": [
+          "not_applicable"
+        ]
+      }
+    },
+    "effusion_content": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "not_applicable"
+        ],
+        "expert_2": [
+          "not_applicable"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "hypoechoic_simple"
+        ],
+        "expert_5": [
+          "hypoechoic_simple"
+        ],
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": [
+          "not_applicable"
+        ]
+      }
+    },
+    "effusion_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "routine"
+        ],
+        "expert_2": [
+          "not_applicable"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "routine"
+        ],
+        "expert_5": [
+          "significant"
+        ],
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": [
+          "not_applicable"
+        ]
+      }
+    },
+    "tamponade_or_constriction": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "neither"
+        ],
+        "expert_2": [
+          "cannot_evaluate"
+        ],
+        "expert_3": [
+          "neither"
+        ],
+        "expert_4": [
+          "neither"
+        ],
+        "expert_5": [
+          "neither"
+        ],
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": [
+          "neither"
+        ]
+      }
+    },
+    "tamponade_or_constriction_supporting_findings": {
+      "type": "multi",
+      "answers": {
+        "expert_1": [],
+        "expert_2": [
+          "cannot_evaluate"
+        ],
+        "expert_3": [
+          "none"
+        ],
+        "expert_4": [
+          "none"
+        ],
+        "expert_5": [
+          "none"
+        ],
+        "expert_6": [],
+        "expert_7": [
+          "none"
+        ]
+      }
+    },
+    "tamponade_or_constriction_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "routine"
+        ],
+        "expert_2": [
+          "routine"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "not_applicable"
+        ],
+        "expert_5": [
+          "routine"
+        ],
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": [
+          "not_applicable"
+        ]
+      }
+    },
+    "epicardial_fat_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "epicardial_fat_amount": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "epicardial_fat_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    }
+  }
+}

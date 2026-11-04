@@ -1,0 +1,197 @@
+{
+  "section": "prosthetic_or_repaired_valves",
+  "title": "Prosthetic Valves or Repaired Valves",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "in_report": {
+      "question": "Prosthetic or repaired valve: does this parameter need to be in the report?",
+      "type": "single",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "position": {
+      "question": "Prosthetic or repaired valve: position (select all that apply)",
+      "type": "multi",
+      "options": [
+        "aortic",
+        "mitral",
+        "tricuspid",
+        "pulmonic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": []
+    },
+    "type": {
+      "question": "Prosthetic or repaired valve: type",
+      "type": "single",
+      "options": [
+        "mechanical",
+        "bioprosthetic_surgical_stented",
+        "bioprosthetic_surgical_stentless",
+        "transcatheter_valve",
+        "annuloplasty_ring",
+        "surgical_repair_without_ring",
+        "edge_to_edge_repair_device",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    },
+    "type_other_description": {
+      "question": "Prosthetic or repaired valve: type: describe 'Other'",
+      "type": "text",
+      "only_if": {
+        "type": "other"
+      },
+      "answer": null
+    },
+    "motion": {
+      "question": "Prosthetic valve motion",
+      "type": "single",
+      "options": [
+        "normal",
+        "restricted",
+        "excessive",
+        "not_well_visualized",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "excessive": "Excessive (rocking, dehiscence)"
+      },
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    },
+    "pathologic_findings": {
+      "question": "Prosthetic or repaired valve: pathologic findings (select all that apply)",
+      "type": "multi",
+      "options": [
+        "none",
+        "leaflet_thickening",
+        "calcification",
+        "pannus",
+        "dehiscence",
+        "paravalvular_leak",
+        "abnormal_position",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": []
+    },
+    "pathologic_findings_other_description": {
+      "question": "Prosthetic or repaired valve: pathologic findings: describe 'Other'",
+      "type": "text",
+      "only_if": {
+        "pathologic_findings": "other"
+      },
+      "answer": null
+    },
+    "masses": {
+      "question": "Prosthetic or repaired valve: masses",
+      "type": "single",
+      "options": [
+        "none",
+        "thrombus",
+        "vegetation",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    },
+    "stenosis": {
+      "question": "Prosthetic or repaired valve: stenosis",
+      "type": "single",
+      "options": [
+        "absent",
+        "present",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    },
+    "regurgitation": {
+      "question": "Prosthetic or repaired valve: regurgitation",
+      "type": "single",
+      "options": [
+        "absent",
+        "present",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    },
+    "regurgitation_severity": {
+      "question": "Prosthetic or repaired valve regurgitation severity",
+      "type": "single",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "trivial_physiologic",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    },
+    "regurgitation_location": {
+      "question": "Prosthetic or repaired valve: regurgitation location",
+      "type": "single",
+      "options": [
+        "valvular_transvalvular",
+        "paravalvular",
+        "both",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    },
+    "acuity": {
+      "question": "Prosthetic or repaired valve: acuity of finding",
+      "type": "single",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}

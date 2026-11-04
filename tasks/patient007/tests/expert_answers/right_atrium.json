@@ -1,0 +1,387 @@
+{
+  "section": "right_atrium",
+  "note": "Expert answers per field. For 'single' fields each expert lists every option they would accept as correct (an accepted range). For 'multi' fields each expert lists the set they selected. null = field not shown to that expert (its only_if condition was not met); [] or \"\" = shown but left blank (only possible for optional questions).",
+  "experts": [
+    "expert_1",
+    "expert_2",
+    "expert_3",
+    "expert_4",
+    "expert_5",
+    "expert_6",
+    "expert_7"
+  ],
+  "fields": {
+    "size": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "normal"
+        ],
+        "expert_2": [
+          "normal"
+        ],
+        "expert_3": [
+          "cannot_evaluate"
+        ],
+        "expert_4": [
+          "dilated"
+        ],
+        "expert_5": [
+          "dilated"
+        ],
+        "expert_6": [
+          "normal"
+        ],
+        "expert_7": [
+          "normal"
+        ]
+      }
+    },
+    "size_severity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "not_applicable"
+        ],
+        "expert_2": [
+          "not_applicable"
+        ],
+        "expert_3": [
+          "cannot_evaluate"
+        ],
+        "expert_4": [
+          "mild"
+        ],
+        "expert_5": [
+          "mild"
+        ],
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": [
+          "not_applicable"
+        ]
+      }
+    },
+    "size_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "routine"
+        ],
+        "expert_2": [
+          "routine"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "routine"
+        ],
+        "expert_5": [
+          "routine"
+        ],
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": [
+          "routine"
+        ]
+      }
+    },
+    "intracavitary_mass_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "intracavitary_mass_etiology": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_location": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_size": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_echogenicity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_shape": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_mobility": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "intracavitary_mass_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    },
+    "sec_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "sec_grade": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "sec_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    },
+    "catheter_or_lead_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "yes"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "yes"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "catheter_or_lead_type": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": [
+          "pacemaker_or_icd_lead"
+        ],
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "catheter_or_lead_type_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "catheter_or_lead_location": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": [
+          "free_floating_or_coiled_in_the_ra"
+        ],
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "catheter_or_lead_location_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "catheter_or_lead_associated_masses": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": [
+          "indeterminate"
+        ],
+        "expert_5": null,
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": null
+      }
+    },
+    "catheter_or_lead_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": [
+          "routine"
+        ],
+        "expert_5": null,
+        "expert_6": [
+          "not_applicable"
+        ],
+        "expert_7": null
+      }
+    }
+  }
+}

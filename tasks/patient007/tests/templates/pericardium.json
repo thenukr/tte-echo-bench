@@ -1,0 +1,257 @@
+{
+  "section": "pericardium",
+  "title": "Pericardium",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "structure": {
+      "question": "Pericardium",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "abnormal",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "structural_abnormality": {
+      "question": "Pericardial abnormality (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "thickening",
+        "calcification",
+        "cyst",
+        "mass",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structure": "abnormal"
+      },
+      "answer": []
+    },
+    "structural_abnormality_other_description": {
+      "question": "Pericardial abnormality: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "structural_abnormality": "other"
+      },
+      "answer": null
+    },
+    "structure_acuity": {
+      "question": "Pericardial abnormalities: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "effusion": {
+      "question": "Pericardial effusion",
+      "type": "single",
+      "subsection": "Effusion",
+      "options": [
+        "absent",
+        "present",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "effusion_size": {
+      "question": "Pericardial effusion size",
+      "type": "single",
+      "subsection": "Effusion",
+      "options": [
+        "small",
+        "medium",
+        "large",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "effusion_measurement": {
+      "question": "Pericardial effusion: measurement (cm)",
+      "type": "single",
+      "subsection": "Effusion",
+      "optional": true,
+      "options": [
+        "less_than_0_5_cm",
+        "0_5_0_9_cm",
+        "1_0_1_4_cm",
+        "1_5_1_9_cm",
+        "2_0_2_4_cm",
+        "2_5_2_9_cm",
+        "3_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "effusion": "present"
+      },
+      "answer": null
+    },
+    "effusion_location": {
+      "question": "Pericardial effusion location",
+      "type": "single",
+      "subsection": "Effusion",
+      "options": [
+        "circumferential",
+        "localized_near_the_lv",
+        "localized_near_the_rv",
+        "localized_near_the_la",
+        "localized_near_the_ra",
+        "transverse_sinus",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "effusion_content": {
+      "question": "Pericardial effusion content or appearance",
+      "type": "single",
+      "subsection": "Effusion",
+      "options": [
+        "hypoechoic_simple",
+        "fibrinous",
+        "stranding",
+        "adhesions",
+        "clot",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "effusion_acuity": {
+      "question": "Pericardial effusion: acuity of finding",
+      "type": "single",
+      "subsection": "Effusion",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "tamponade_or_constriction": {
+      "question": "Tamponade physiology or constriction",
+      "type": "single",
+      "subsection": "Physiology",
+      "options": [
+        "neither",
+        "tamponade_physiology",
+        "constriction",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "tamponade_or_constriction_supporting_findings": {
+      "question": "Supporting findings (select all that apply)",
+      "type": "multi",
+      "subsection": "Physiology",
+      "optional": true,
+      "options": [
+        "right_atrial_collapse",
+        "right_ventricular_diastolic_collapse",
+        "significant_respiratory_variation_of_mitral_inflow",
+        "significant_respiratory_variation_of_tricuspid_inflow",
+        "dilated_ivc_without_respiratory_collapse",
+        "septal_bounce",
+        "none",
+        "cannot_evaluate"
+      ],
+      "answer": []
+    },
+    "tamponade_or_constriction_acuity": {
+      "question": "Tamponade physiology or constriction: acuity of finding",
+      "type": "single",
+      "subsection": "Physiology",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "epicardial_fat_in_report": {
+      "question": "Epicardial fat: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Epicardial Fat",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "epicardial_fat_amount": {
+      "question": "Epicardial fat: amount",
+      "type": "single",
+      "subsection": "Epicardial Fat",
+      "options": [
+        "small",
+        "moderate",
+        "large",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "epicardial_fat_in_report": "yes"
+      },
+      "answer": null
+    },
+    "epicardial_fat_acuity": {
+      "question": "Epicardial fat: acuity of finding",
+      "type": "single",
+      "subsection": "Epicardial Fat",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "epicardial_fat_in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}

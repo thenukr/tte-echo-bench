@@ -1,0 +1,512 @@
+{
+  "section": "right_ventricle",
+  "title": "Right Ventricle",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "size": {
+      "question": "Size",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "small",
+        "dilated",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "size_severity": {
+      "question": "Size severity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_reliably_measurable",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "size_acuity": {
+      "question": "Right ventricle size: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "wall_thickness": {
+      "question": "Wall thickness",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "increased",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "wall_thickness_acuity": {
+      "question": "Right ventricle wall thickness: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "intracavitary_mass_in_report": {
+      "question": "Intracavitary or myocardial masses: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "intracavitary_mass_etiology": {
+      "question": "RV mass: suspected etiology (consistent with)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "thrombus",
+        "neoplasm",
+        "vegetation",
+        "normal_variant",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "neoplasm": "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+        "normal_variant": "Normal variant (e.g. false tendon, prominent trabeculation, artifact)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "intracavitary_mass_location": {
+      "question": "RV mass: location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "apex",
+        "rv_free_wall",
+        "septum_rv_side",
+        "rv_outflow_tract",
+        "attached_to_tricuspid_apparatus",
+        "moderator_band_region",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_size": {
+      "question": "RV mass: size (largest dimension)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "less_than_0_5_cm",
+        "0_5_0_9_cm",
+        "1_0_1_4_cm",
+        "1_5_1_9_cm",
+        "2_0_2_9_cm",
+        "3_0_3_9_cm",
+        "4_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_echogenicity": {
+      "question": "RV mass: echogenicity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "echodense_bright",
+        "echolucent_dark",
+        "mixed_heterogeneous",
+        "isoechoic",
+        "calcified",
+        "other",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "isoechoic": "Same brightness as heart muscle (isoechoic)"
+      },
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_shape": {
+      "question": "RV mass: shape and attachment",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "round_or_oval_well_defined",
+        "irregular_or_lobulated",
+        "flat_layered_along_the_wall_laminar",
+        "broad_based_sessile",
+        "on_a_stalk_pedunculated",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_other_description": {
+      "question": "RV mass: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if_any": [
+        {
+          "intracavitary_mass_location": "other"
+        },
+        {
+          "intracavitary_mass_echogenicity": "other"
+        },
+        {
+          "intracavitary_mass_shape": "other"
+        }
+      ],
+      "answer": null
+    },
+    "intracavitary_mass_mobility": {
+      "question": "RV mass: mobility",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "fixed",
+        "mobile",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_acuity": {
+      "question": "Right ventricle intracavitary or myocardial masses: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_in_report": {
+      "question": "Catheters or device leads: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "catheter_or_lead_type": {
+      "question": "Catheter or device lead: type",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "pacemaker_or_icd_lead",
+        "central_venous_catheter",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_type_other_description": {
+      "question": "Catheter or device lead: type: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "catheter_or_lead_type": "other"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_location": {
+      "question": "Catheter or device lead: location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "crossing_the_tricuspid_valve_to_the_rv_apex",
+        "rv_apex",
+        "rv_septum_septal_lead",
+        "rv_outflow_tract",
+        "free_floating_or_not_seated",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_location_other_description": {
+      "question": "Catheter or device lead: location: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if": {
+        "catheter_or_lead_location": "other"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_associated_masses": {
+      "question": "Catheter or device lead: associated masses",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "none",
+        "thrombus",
+        "vegetation",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_acuity": {
+      "question": "Right ventricle catheters or device leads: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    },
+    "global_systolic_function": {
+      "question": "Global systolic function",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "normal",
+        "reduced",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "global_systolic_function_severity": {
+      "question": "Global systolic function severity",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_reliably_measurable",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "global_systolic_function_acuity": {
+      "question": "Right ventricle global systolic function: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "rwma_in_report": {
+      "question": "Right ventricular regional wall motion abnormalities: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "rwma_walls": {
+      "question": "RV regional wall motion: walls involved (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "rv_free_wall",
+        "rv_apex",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_in_report": "yes"
+      },
+      "answer": []
+    },
+    "rwma_free_wall_level": {
+      "question": "RV free wall: level (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "basal",
+        "mid",
+        "apical",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "rv_free_wall"
+      },
+      "answer": []
+    },
+    "rwma_free_wall_grade": {
+      "question": "RV free wall: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "rv_free_wall"
+      },
+      "answer": []
+    },
+    "rwma_apex_grade": {
+      "question": "RV apex: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "rv_apex"
+      },
+      "answer": []
+    },
+    "rwma_acuity": {
+      "question": "Right ventricular regional wall motion abnormalities: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "rwma_in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}

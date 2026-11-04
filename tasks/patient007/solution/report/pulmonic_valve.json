@@ -1,0 +1,235 @@
+{
+  "section": "pulmonic_valve",
+  "title": "Pulmonic Valve",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "structure": {
+      "question": "Pulmonic valve structure",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "structurally_normal",
+        "structurally_abnormal",
+        "not_well_visualized",
+        "cannot_evaluate"
+      ],
+      "answer": "structurally_normal"
+    },
+    "structure_acuity": {
+      "question": "Pulmonic valve structure: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "structural_abnormalities_in_report": {
+      "question": "Pulmonic valve structural abnormalities: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "structural_abnormality": {
+      "question": "Pulmonic valve: structural abnormality (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "thickening",
+        "calcification",
+        "dysplastic_leaflets",
+        "mass_or_vegetation",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "structural_abnormalities_in_report": "yes"
+      },
+      "answer": null
+    },
+    "structural_abnormality_other_description": {
+      "question": "Pulmonic valve: structural abnormality: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "structural_abnormality": "other"
+      },
+      "answer": null
+    },
+    "structural_abnormalities_acuity": {
+      "question": "Pulmonic valve structural abnormalities: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "structural_abnormalities_in_report": "yes"
+      },
+      "answer": null
+    },
+    "abnormal_motion_in_report": {
+      "question": "Pulmonic valve abnormal motion: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "abnormal_motion": {
+      "question": "Pulmonic valve: abnormal motion (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "restricted_leaflet_motion",
+        "doming",
+        "flail",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "abnormal_motion_in_report": "yes"
+      },
+      "answer": null
+    },
+    "abnormal_motion_acuity": {
+      "question": "Pulmonic valve abnormal motion: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "abnormal_motion_in_report": "yes"
+      },
+      "answer": null
+    },
+    "stenosis": {
+      "question": "Pulmonic stenosis",
+      "type": "single",
+      "subsection": "Function: Stenosis",
+      "options": [
+        "absent",
+        "present",
+        "cannot_evaluate"
+      ],
+      "answer": "absent"
+    },
+    "stenosis_severity": {
+      "question": "Pulmonic stenosis severity",
+      "type": "single",
+      "subsection": "Function: Stenosis",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "not_applicable"
+    },
+    "stenosis_acuity": {
+      "question": "Pulmonic stenosis: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Stenosis",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "not_applicable"
+    },
+    "regurgitation": {
+      "question": "Pulmonic regurgitation",
+      "type": "single",
+      "subsection": "Function: Regurgitation",
+      "options": [
+        "absent",
+        "present",
+        "cannot_evaluate"
+      ],
+      "answer": "absent"
+    },
+    "regurgitation_severity": {
+      "question": "Pulmonic regurgitation severity",
+      "type": "single",
+      "subsection": "Function: Regurgitation",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "trivial",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "trivial"
+    },
+    "regurgitation_acuity": {
+      "question": "Pulmonic regurgitation: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Regurgitation",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    }
+  }
+}

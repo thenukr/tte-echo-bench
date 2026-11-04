@@ -1,0 +1,255 @@
+{
+  "section": "inferior_vena_cava",
+  "note": "Expert answers per field. For 'single' fields each expert lists every option they would accept as correct (an accepted range). For 'multi' fields each expert lists the set they selected. null = field not shown to that expert (its only_if condition was not met); [] or \"\" = shown but left blank (only possible for optional questions).",
+  "experts": [
+    "expert_1",
+    "expert_2",
+    "expert_3",
+    "expert_4",
+    "expert_5",
+    "expert_6",
+    "expert_7"
+  ],
+  "fields": {
+    "size": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "cannot_evaluate"
+        ],
+        "expert_2": [
+          "normal"
+        ],
+        "expert_3": [
+          "cannot_evaluate"
+        ],
+        "expert_4": [
+          "normal"
+        ],
+        "expert_5": [
+          "normal"
+        ],
+        "expert_6": [
+          "cannot_evaluate"
+        ],
+        "expert_7": [
+          "normal"
+        ]
+      }
+    },
+    "respiratory_change": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "cannot_evaluate"
+        ],
+        "expert_2": [
+          "collapses_more_than_50_pct"
+        ],
+        "expert_3": [
+          "cannot_evaluate"
+        ],
+        "expert_4": [
+          "collapses_more_than_50_pct"
+        ],
+        "expert_5": [
+          "collapses_more_than_50_pct"
+        ],
+        "expert_6": [
+          "collapses_more_than_50_pct"
+        ],
+        "expert_7": [
+          "collapses_more_than_50_pct"
+        ]
+      }
+    },
+    "estimated_ra_pressure": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "cannot_evaluate"
+        ],
+        "expert_2": [
+          "3_mmhg_0_5"
+        ],
+        "expert_3": [
+          "cannot_evaluate"
+        ],
+        "expert_4": [
+          "3_mmhg_0_5"
+        ],
+        "expert_5": [
+          "3_mmhg_0_5"
+        ],
+        "expert_6": [
+          "8_mmhg_5_10"
+        ],
+        "expert_7": [
+          "8_mmhg_5_10"
+        ]
+      }
+    },
+    "size_and_ra_pressure_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "not_applicable"
+        ],
+        "expert_2": [
+          "routine"
+        ],
+        "expert_3": [
+          "not_applicable"
+        ],
+        "expert_4": [
+          "routine"
+        ],
+        "expert_5": [
+          "routine"
+        ],
+        "expert_6": [
+          "routine"
+        ],
+        "expert_7": [
+          "routine"
+        ]
+      }
+    },
+    "mass_or_device_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "mass_or_device": {
+      "type": "multi",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "mass_or_device_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "mass_or_device_location": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "mass_or_device_location_other_description": {
+      "type": "text",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "mass_or_device_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "hepatic_vein_flow_pattern_in_report": {
+      "type": "single",
+      "answers": {
+        "expert_1": [
+          "no"
+        ],
+        "expert_2": [
+          "no"
+        ],
+        "expert_3": [
+          "no"
+        ],
+        "expert_4": [
+          "no"
+        ],
+        "expert_5": [
+          "no"
+        ],
+        "expert_6": [
+          "no"
+        ],
+        "expert_7": [
+          "no"
+        ]
+      }
+    },
+    "hepatic_vein_flow_pattern": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    },
+    "hepatic_vein_flow_pattern_acuity": {
+      "type": "single",
+      "answers": {
+        "expert_1": null,
+        "expert_2": null,
+        "expert_3": null,
+        "expert_4": null,
+        "expert_5": null,
+        "expert_6": null,
+        "expert_7": null
+      }
+    }
+  }
+}

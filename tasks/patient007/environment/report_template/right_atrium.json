@@ -1,0 +1,390 @@
+{
+  "section": "right_atrium",
+  "title": "Right Atrium",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "size": {
+      "question": "Size",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "dilated",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "size_severity": {
+      "question": "Size severity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "size_acuity": {
+      "question": "Right atrium size: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": null
+    },
+    "intracavitary_mass_in_report": {
+      "question": "Intracavitary masses: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "intracavitary_mass_etiology": {
+      "question": "RA mass: suspected etiology (consistent with)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "thrombus",
+        "neoplasm",
+        "vegetation",
+        "prominent_normal_structure",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "neoplasm": "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+        "prominent_normal_structure": "Prominent normal structure (Eustachian valve, Chiari network, crista terminalis)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "intracavitary_mass_location": {
+      "question": "RA mass: location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "interatrial_septum",
+        "free_wall",
+        "near_the_svc_or_ivc_junction",
+        "attached_to_the_tricuspid_annulus_or_leaflet",
+        "on_a_catheter_or_device_lead",
+        "eustachian_valve_or_chiari_network_region",
+        "free_floating",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_size": {
+      "question": "RA mass: size (largest dimension)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "less_than_0_5_cm",
+        "0_5_0_9_cm",
+        "1_0_1_4_cm",
+        "1_5_1_9_cm",
+        "2_0_2_9_cm",
+        "3_0_3_9_cm",
+        "4_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_echogenicity": {
+      "question": "RA mass: echogenicity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "echodense_bright",
+        "echolucent_dark",
+        "mixed_heterogeneous",
+        "isoechoic",
+        "calcified",
+        "other",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "isoechoic": "Same brightness as heart muscle (isoechoic)"
+      },
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_shape": {
+      "question": "RA mass: shape and attachment",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "round_or_oval_well_defined",
+        "irregular_or_lobulated",
+        "flat_layered_along_the_wall_laminar",
+        "broad_based_sessile",
+        "on_a_stalk_pedunculated",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_other_description": {
+      "question": "RA mass: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if_any": [
+        {
+          "intracavitary_mass_location": "other"
+        },
+        {
+          "intracavitary_mass_echogenicity": "other"
+        },
+        {
+          "intracavitary_mass_shape": "other"
+        }
+      ],
+      "answer": null
+    },
+    "intracavitary_mass_mobility": {
+      "question": "RA mass: mobility",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "fixed",
+        "mobile",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_acuity": {
+      "question": "Right atrium intracavitary masses: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "sec_in_report": {
+      "question": "Spontaneous echo contrast: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "sec_grade": {
+      "question": "Right atrial spontaneous echo contrast grade",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "sec_in_report": "yes"
+      },
+      "answer": null
+    },
+    "sec_acuity": {
+      "question": "Right atrium spontaneous echo contrast: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "sec_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_in_report": {
+      "question": "Catheters or device leads: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": null
+    },
+    "catheter_or_lead_type": {
+      "question": "Right atrial catheter or device lead: type",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "pacemaker_or_icd_lead",
+        "central_venous_catheter",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_type_other_description": {
+      "question": "Right atrial catheter or device lead: type: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "catheter_or_lead_type": "other"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_location": {
+      "question": "Right atrial catheter or device lead: location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "right_atrial_appendage",
+        "ra_free_wall",
+        "svc_ra_junction",
+        "passing_through_the_ra_toward_the_tricuspid_valve",
+        "coronary_sinus",
+        "free_floating_or_coiled_in_the_ra",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_location_other_description": {
+      "question": "Right atrial catheter or device lead: location: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if": {
+        "catheter_or_lead_location": "other"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_associated_masses": {
+      "question": "Right atrial catheter or device lead: associated masses",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "none",
+        "thrombus",
+        "vegetation",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    },
+    "catheter_or_lead_acuity": {
+      "question": "Right atrium catheters or device leads: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "catheter_or_lead_in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}

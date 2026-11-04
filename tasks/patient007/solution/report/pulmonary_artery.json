@@ -1,0 +1,139 @@
+{
+  "section": "pulmonary_artery",
+  "title": "Pulmonary Artery",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "size_in_report": {
+      "question": "Pulmonary artery size: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "size": {
+      "question": "Pulmonary artery size",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "dilated",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "size_in_report": "yes"
+      },
+      "answer": null
+    },
+    "size_acuity": {
+      "question": "Pulmonary artery size: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "size_in_report": "yes"
+      },
+      "answer": null
+    },
+    "abnormality_in_report": {
+      "question": "Pulmonary artery other abnormalities: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "abnormality": {
+      "question": "Pulmonary artery: abnormality (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "thrombus_or_embolus",
+        "stenosis",
+        "mass",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "abnormality_in_report": "yes"
+      },
+      "answer": null
+    },
+    "abnormality_other_description": {
+      "question": "Pulmonary artery: abnormality: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "only_if": {
+        "abnormality": "other"
+      },
+      "answer": null
+    },
+    "abnormality_location": {
+      "question": "Pulmonary artery: abnormality location (select all that apply)",
+      "type": "multi",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "main_pulmonary_artery",
+        "bifurcation",
+        "right_pulmonary_artery",
+        "left_pulmonary_artery",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "abnormality_in_report": "yes"
+      },
+      "answer": null
+    },
+    "abnormality_location_other_description": {
+      "question": "Pulmonary artery: abnormality location: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if": {
+        "abnormality_location": "other"
+      },
+      "answer": null
+    },
+    "abnormality_acuity": {
+      "question": "Pulmonary artery other abnormalities: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "abnormality_in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}
