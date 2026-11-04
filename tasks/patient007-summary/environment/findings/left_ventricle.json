@@ -1,0 +1,1142 @@
+{
+  "section": "left_ventricle",
+  "title": "Left Ventricle",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "size": {
+      "question": "Size",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "small",
+        "dilated",
+        "cannot_evaluate"
+      ],
+      "answer": "normal"
+    },
+    "size_severity": {
+      "question": "Size Severity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "not_applicable"
+    },
+    "size_acuity": {
+      "question": "Left ventricle size: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "wall_thickness": {
+      "question": "Wall thickness",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "increased",
+        "decreased_thinned",
+        "cannot_evaluate"
+      ],
+      "answer": "normal"
+    },
+    "wall_thickness_severity": {
+      "question": "Wall thickness severity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "not_applicable"
+    },
+    "wall_thickness_acuity": {
+      "question": "Left ventricle wall thickness: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "lv_mass_index": {
+      "question": "Left ventricular mass",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "concentric_hypertrophy",
+        "eccentric_hypertrophy",
+        "cannot_evaluate"
+      ],
+      "answer": "normal"
+    },
+    "lv_mass_index_severity": {
+      "question": "Left ventricular mass severity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "not_applicable"
+    },
+    "lv_mass_index_acuity": {
+      "question": "Left ventricular mass: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "intracavitary_mass_in_report": {
+      "question": "Intracavitary or myocardial masses: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "intracavitary_mass_etiology": {
+      "question": "LV mass: suspected etiology (consistent with)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "thrombus",
+        "neoplasm",
+        "vegetation",
+        "normal_variant",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "neoplasm": "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+        "normal_variant": "Normal variant (e.g. false tendon, prominent trabeculation, artifact)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "intracavitary_mass_location": {
+      "question": "LV mass: location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "apex",
+        "anterior_wall",
+        "septum",
+        "inferior_wall",
+        "lateral_wall",
+        "lv_outflow_tract",
+        "attached_to_mitral_apparatus_chordae_or_papillary_muscle",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_size": {
+      "question": "LV mass: size (largest dimension)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "less_than_0_5_cm",
+        "0_5_0_9_cm",
+        "1_0_1_4_cm",
+        "1_5_1_9_cm",
+        "2_0_2_9_cm",
+        "3_0_3_9_cm",
+        "4_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_echogenicity": {
+      "question": "LV mass: echogenicity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "echodense_bright",
+        "echolucent_dark",
+        "mixed_heterogeneous",
+        "isoechoic",
+        "calcified",
+        "other",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "isoechoic": "Same brightness as heart muscle (isoechoic)"
+      },
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_shape": {
+      "question": "LV mass: shape and attachment",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "round_or_oval_well_defined",
+        "irregular_or_lobulated",
+        "flat_layered_along_the_wall_laminar",
+        "broad_based_sessile",
+        "on_a_stalk_pedunculated",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_other_description": {
+      "question": "LV mass: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if_any": [
+        {
+          "intracavitary_mass_location": "other"
+        },
+        {
+          "intracavitary_mass_echogenicity": "other"
+        },
+        {
+          "intracavitary_mass_shape": "other"
+        }
+      ],
+      "answer": null
+    },
+    "intracavitary_mass_mobility": {
+      "question": "LV mass: mobility",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "fixed",
+        "mobile",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_acuity": {
+      "question": "Left ventricle intracavitary or myocardial masses: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "upper_septal_morphology_in_report": {
+      "question": "Left ventricular upper septal morphology: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "upper_septal_morphology_finding": {
+      "question": "Upper septal finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "discrete_subaortic_membrane",
+        "discrete_upper_septal_hypertrophy_sigmoid_septum",
+        "asymmetric_septal_hypertrophy",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "upper_septal_morphology_in_report": "yes"
+      },
+      "answer": null
+    },
+    "upper_septal_morphology_hemodynamic_consequence": {
+      "question": "Upper septal morphology: hemodynamic consequence",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "none",
+        "lvot_obstruction_at_rest",
+        "lvot_obstruction_with_provocation_only",
+        "systolic_anterior_motion_of_the_mitral_valve",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "upper_septal_morphology_in_report": "yes"
+      },
+      "answer": null
+    },
+    "upper_septal_morphology_acuity": {
+      "question": "Left ventricular upper septal morphology: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "upper_septal_morphology_in_report": "yes"
+      },
+      "answer": null
+    },
+    "aneurysm_in_report": {
+      "question": "Aneurysm, pseudoaneurysm or diverticulum: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "yes"
+    },
+    "aneurysm_type": {
+      "question": "Aneurysm, pseudoaneurysm or diverticulum: type",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "aneurysm",
+        "pseudoaneurysm",
+        "diverticulum",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "aneurysm_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "aneurysm_location": {
+      "question": "Aneurysm, pseudoaneurysm or diverticulum: location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "apical",
+        "anterior",
+        "anteroseptal",
+        "inferoseptal",
+        "inferior",
+        "inferolateral",
+        "anterolateral",
+        "basal",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "aneurysm_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "aneurysm_size": {
+      "question": "Aneurysm, pseudoaneurysm or diverticulum: size (largest dimension)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "less_than_1_0_cm",
+        "1_0_1_9_cm",
+        "2_0_2_9_cm",
+        "3_0_3_9_cm",
+        "4_0_4_9_cm",
+        "5_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "aneurysm_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "aneurysm_associated_thrombus_or_mass": {
+      "question": "Aneurysm, pseudoaneurysm or diverticulum: associated thrombus or mass",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "none",
+        "thrombus",
+        "mass",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "aneurysm_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "aneurysm_acuity": {
+      "question": "Aneurysm, pseudoaneurysm or diverticulum: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "aneurysm_in_report": "yes"
+      },
+      "answer": "not_applicable"
+    },
+    "global_systolic_function": {
+      "question": "Global systolic function",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "normal",
+        "hyperdynamic",
+        "reduced",
+        "cannot_evaluate"
+      ],
+      "answer": "normal"
+    },
+    "global_systolic_function_severity": {
+      "question": "Global systolic function severity",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "not_applicable"
+    },
+    "global_systolic_function_acuity": {
+      "question": "Left ventricle global systolic function: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "ef": {
+      "question": "Ejection fraction",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "normal",
+        "abnormal",
+        "cannot_evaluate"
+      ],
+      "answer": "normal"
+    },
+    "ef_value": {
+      "question": "Ejection fraction value",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "5_10_pct",
+        "10_15_pct",
+        "15_20_pct",
+        "20_25_pct",
+        "25_30_pct",
+        "30_35_pct",
+        "35_40_pct",
+        "40_45_pct",
+        "45_50_pct",
+        "50_55_pct",
+        "55_60_pct",
+        "60_65_pct",
+        "65_70_pct",
+        "over_70_pct",
+        "cannot_evaluate"
+      ],
+      "answer": "65_70_pct"
+    },
+    "ef_method": {
+      "question": "Ejection fraction method (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "2d_linear",
+        "2d_or_3d_volumetric",
+        "visual",
+        "cannot_evaluate"
+      ],
+      "answer": [
+        "visual"
+      ]
+    },
+    "ef_acuity": {
+      "question": "Ejection fraction: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "rwma": {
+      "question": "Regional wall motion abnormalities",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "absent",
+        "present",
+        "cannot_evaluate"
+      ],
+      "answer": "absent"
+    },
+    "rwma_walls": {
+      "question": "Regional wall motion: walls involved (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "anterior",
+        "anteroseptal",
+        "inferoseptal",
+        "inferior",
+        "inferolateral",
+        "anterolateral",
+        "apex",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma": "present"
+      },
+      "answer": null
+    },
+    "anterior_wall_level": {
+      "question": "Anterior wall: level (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "basal",
+        "mid",
+        "apical",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "anterior"
+      },
+      "answer": null
+    },
+    "anterior_wall_grade": {
+      "question": "Anterior wall: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "anterior"
+      },
+      "answer": null
+    },
+    "anteroseptal_wall_level": {
+      "question": "Anteroseptal wall: level (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "basal",
+        "mid",
+        "apical",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "anteroseptal"
+      },
+      "answer": null
+    },
+    "anteroseptal_wall_grade": {
+      "question": "Anteroseptal wall: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "anteroseptal"
+      },
+      "answer": null
+    },
+    "inferoseptal_wall_level": {
+      "question": "Inferoseptal wall: level (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "basal",
+        "mid",
+        "apical",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "inferoseptal"
+      },
+      "answer": null
+    },
+    "inferoseptal_wall_grade": {
+      "question": "Inferoseptal wall: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "inferoseptal"
+      },
+      "answer": null
+    },
+    "inferior_wall_level": {
+      "question": "Inferior wall: level (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "basal",
+        "mid",
+        "apical",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "inferior"
+      },
+      "answer": null
+    },
+    "inferior_wall_grade": {
+      "question": "Inferior wall: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "inferior"
+      },
+      "answer": null
+    },
+    "inferolateral_wall_level": {
+      "question": "Inferolateral wall: level (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "basal",
+        "mid",
+        "apical",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "inferolateral"
+      },
+      "answer": null
+    },
+    "inferolateral_wall_grade": {
+      "question": "Inferolateral wall: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "inferolateral"
+      },
+      "answer": null
+    },
+    "anterolateral_wall_level": {
+      "question": "Anterolateral wall: level (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "basal",
+        "mid",
+        "apical",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "anterolateral"
+      },
+      "answer": null
+    },
+    "anterolateral_wall_grade": {
+      "question": "Anterolateral wall: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "anterolateral"
+      },
+      "answer": null
+    },
+    "rwma_apex_grade": {
+      "question": "Apex: grade (select all that apply)",
+      "type": "multi",
+      "subsection": "Function: Systolic",
+      "options": [
+        "hyperkinetic",
+        "hypokinetic",
+        "akinetic",
+        "dyskinetic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "rwma_walls": "apex"
+      },
+      "answer": null
+    },
+    "rwma_acuity": {
+      "question": "Regional wall motion abnormalities: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "not_applicable"
+    },
+    "obstructive_lesion_in_report": {
+      "question": "Obstructive lesions (dynamic or structural): does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "yes"
+    },
+    "obstructive_lesion_type": {
+      "question": "Obstructive lesion: type",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "dynamic_lvot_obstruction",
+        "mid_cavity_obstruction",
+        "structural_fixed_obstruction",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "obstructive_lesion_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "obstructive_lesion_peak_gradient_rest": {
+      "question": "Obstructive lesion: peak gradient at rest (mmHg)",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "less_than_10_mmhg",
+        "10_19_mmhg",
+        "20_29_mmhg",
+        "30_39_mmhg",
+        "40_49_mmhg",
+        "50_64_mmhg",
+        "65_79_mmhg",
+        "80_99_mmhg",
+        "100_mmhg_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "obstructive_lesion_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "obstructive_lesion_peak_gradient_maneuver": {
+      "question": "Obstructive lesion: peak gradient with physiologic maneuver (mmHg)",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "optional": true,
+      "options": [
+        "less_than_10_mmhg",
+        "10_19_mmhg",
+        "20_29_mmhg",
+        "30_39_mmhg",
+        "40_49_mmhg",
+        "50_64_mmhg",
+        "65_79_mmhg",
+        "80_99_mmhg",
+        "100_mmhg_or_more",
+        "not_performed_obstruction_not_dynamic",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "obstructive_lesion_in_report": "yes"
+      },
+      "answer": null
+    },
+    "obstructive_lesion_acuity": {
+      "question": "Obstructive lesions: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "obstructive_lesion_in_report": "yes"
+      },
+      "answer": "not_applicable"
+    },
+    "strain_in_report": {
+      "question": "Myocardial strain: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "yes"
+    },
+    "gls_value": {
+      "question": "Global longitudinal strain value (GLS, %)",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "minus_24_pct_or_more_negative",
+        "minus_22_to_minus_23_9_pct",
+        "minus_20_to_minus_21_9_pct",
+        "minus_18_to_minus_19_9_pct",
+        "minus_16_to_minus_17_9_pct",
+        "minus_14_to_minus_15_9_pct",
+        "minus_12_to_minus_13_9_pct",
+        "minus_10_to_minus_11_9_pct",
+        "minus_8_to_minus_9_9_pct",
+        "less_negative_than_minus_8_pct",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "strain_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "gls": {
+      "question": "Global longitudinal strain",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "normal",
+        "abnormal",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "strain_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "strain_acuity": {
+      "question": "Myocardial strain: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Systolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "strain_in_report": "yes"
+      },
+      "answer": "not_applicable"
+    },
+    "diastolic_function": {
+      "question": "Diastolic function or LV relaxation",
+      "type": "single",
+      "subsection": "Function: Diastolic",
+      "options": [
+        "normal",
+        "abnormal_impaired",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "answer": "abnormal_impaired"
+    },
+    "diastolic_function_acuity": {
+      "question": "Diastolic function or LV relaxation: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Diastolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "filling_pressures": {
+      "question": "Filling pressures",
+      "type": "single",
+      "subsection": "Function: Diastolic",
+      "options": [
+        "normal",
+        "elevated",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "answer": "cannot_evaluate"
+    },
+    "filling_pressures_refer_to": {
+      "question": "Filling pressures refer to",
+      "type": "single",
+      "subsection": "Function: Diastolic",
+      "optional": true,
+      "options": [
+        "left_atrial_pressure",
+        "lv_end_diastolic_pressure",
+        "cannot_evaluate"
+      ],
+      "answer": null
+    },
+    "filling_pressures_acuity": {
+      "question": "Filling pressures: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Diastolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "not_applicable"
+    },
+    "diastolic_dysfunction_grade": {
+      "question": "Grade of LV diastolic dysfunction",
+      "type": "single",
+      "subsection": "Function: Diastolic",
+      "options": [
+        "grade_1",
+        "grade_2",
+        "grade_3",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "grade_1": "Grade 1 (I)",
+        "grade_2": "Grade 2 (II)",
+        "grade_3": "Grade 3 (III)"
+      },
+      "only_if": {
+        "diastolic_function": "abnormal_impaired"
+      },
+      "answer": "grade_1"
+    },
+    "diastolic_dysfunction_grade_acuity": {
+      "question": "Grade of LV diastolic dysfunction: acuity of finding",
+      "type": "single",
+      "subsection": "Function: Diastolic",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "diastolic_function": "abnormal_impaired"
+      },
+      "answer": "routine"
+    }
+  }
+}

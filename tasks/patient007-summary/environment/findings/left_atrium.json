@@ -1,0 +1,692 @@
+{
+  "section": "left_atrium",
+  "title": "Left Atrium",
+  "instructions": "Fill in 'answer' for every field. 'single' fields take exactly one option (a string); 'multi' fields take a list of every option that applies; 'text' fields take a short free-text string. A field with 'only_if' is only answered when its condition holds: each listed field's answer must include one of the listed options (all listed fields must match; for 'only_if_any', at least one entry must match). A field is also skipped when the field it depends on was itself skipped. Use null for skipped fields. Fields marked 'optional' may be left null (or [] for multi) even when shown. 'cannot_evaluate' means the finding cannot be evaluated from the data provided.",
+  "fields": {
+    "size": {
+      "question": "Size",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "normal",
+        "dilated",
+        "cannot_evaluate"
+      ],
+      "answer": "dilated"
+    },
+    "size_severity": {
+      "question": "Size severity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "not_applicable",
+        "cannot_evaluate"
+      ],
+      "answer": "mild"
+    },
+    "size_acuity": {
+      "question": "Left atrium size: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "answer": "routine"
+    },
+    "intracavitary_mass_in_report": {
+      "question": "Intracavitary masses: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "intracavitary_mass_etiology": {
+      "question": "LA mass: suspected etiology (consistent with)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "thrombus",
+        "neoplasm",
+        "vegetation",
+        "normal_variant",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "neoplasm": "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+        "normal_variant": "Normal variant (e.g. prominent structure, artifact)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "intracavitary_mass_location": {
+      "question": "LA mass: location",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "interatrial_septum_fossa_ovalis",
+        "posterior_wall",
+        "roof",
+        "near_a_pulmonary_vein_ostium",
+        "attached_to_the_mitral_annulus_or_leaflet",
+        "free_floating",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_size": {
+      "question": "LA mass: size (largest dimension)",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "less_than_0_5_cm",
+        "0_5_0_9_cm",
+        "1_0_1_4_cm",
+        "1_5_1_9_cm",
+        "2_0_2_9_cm",
+        "3_0_3_9_cm",
+        "4_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_echogenicity": {
+      "question": "LA mass: echogenicity",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "echodense_bright",
+        "echolucent_dark",
+        "mixed_heterogeneous",
+        "isoechoic",
+        "calcified",
+        "other",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "isoechoic": "Same brightness as heart muscle (isoechoic)"
+      },
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_shape": {
+      "question": "LA mass: shape and attachment",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "round_or_oval_well_defined",
+        "irregular_or_lobulated",
+        "flat_layered_along_the_wall_laminar",
+        "broad_based_sessile",
+        "on_a_stalk_pedunculated",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_other_description": {
+      "question": "LA mass: describe 'Other'",
+      "type": "text",
+      "subsection": "Morphology / Structure",
+      "optional": true,
+      "only_if_any": [
+        {
+          "intracavitary_mass_location": "other"
+        },
+        {
+          "intracavitary_mass_echogenicity": "other"
+        },
+        {
+          "intracavitary_mass_shape": "other"
+        }
+      ],
+      "answer": null
+    },
+    "intracavitary_mass_mobility": {
+      "question": "LA mass: mobility",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "fixed",
+        "mobile",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "intracavitary_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "intracavitary_mass_acuity": {
+      "question": "Left atrium intracavitary masses: acuity of finding",
+      "type": "single",
+      "subsection": "Morphology / Structure",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "intracavitary_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "laa_mass_in_report": {
+      "question": "Left atrial appendage: intracavitary masses: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "laa_mass_etiology": {
+      "question": "Left atrial appendage mass: suspected etiology (consistent with)",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "thrombus",
+        "neoplasm",
+        "vegetation",
+        "normal_variant",
+        "indeterminate",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "normal_variant": "Normal variant (e.g. pectinate muscle, artifact)"
+      },
+      "only_if": {
+        "laa_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "laa_mass_location": {
+      "question": "Left atrial appendage mass: location",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "tip_apex_of_the_appendage",
+        "body_of_the_appendage",
+        "ostium_mouth_of_the_appendage",
+        "fills_the_entire_appendage",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "laa_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "laa_mass_size": {
+      "question": "Left atrial appendage mass: size (largest dimension)",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "less_than_0_5_cm",
+        "0_5_0_9_cm",
+        "1_0_1_4_cm",
+        "1_5_1_9_cm",
+        "2_0_2_9_cm",
+        "3_0_3_9_cm",
+        "4_0_cm_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "laa_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "laa_mass_echogenicity": {
+      "question": "Left atrial appendage mass: echogenicity",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "echodense_bright",
+        "echolucent_dark",
+        "mixed_heterogeneous",
+        "isoechoic",
+        "calcified",
+        "other",
+        "cannot_evaluate"
+      ],
+      "option_labels": {
+        "isoechoic": "Same brightness as heart muscle (isoechoic)"
+      },
+      "only_if": {
+        "laa_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "laa_mass_shape": {
+      "question": "Left atrial appendage mass: shape and attachment",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "round_or_oval_well_defined",
+        "irregular_or_lobulated",
+        "flat_layered_along_the_wall_laminar",
+        "broad_based_sessile",
+        "on_a_stalk_pedunculated",
+        "other",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "laa_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "laa_mass_mobility": {
+      "question": "Left atrial appendage mass: mobility",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "fixed",
+        "mobile",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "laa_mass_etiology": [
+          "thrombus",
+          "neoplasm",
+          "vegetation",
+          "indeterminate"
+        ]
+      },
+      "answer": null
+    },
+    "laa_mass_other_description": {
+      "question": "Left atrial appendage mass: describe 'Other'",
+      "type": "text",
+      "subsection": "Left Atrial Appendage",
+      "optional": true,
+      "only_if_any": [
+        {
+          "laa_mass_location": "other"
+        },
+        {
+          "laa_mass_echogenicity": "other"
+        },
+        {
+          "laa_mass_shape": "other"
+        }
+      ],
+      "answer": null
+    },
+    "laa_mass_acuity": {
+      "question": "Left atrial appendage intracavitary masses: acuity of finding",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "laa_mass_in_report": "yes"
+      },
+      "answer": null
+    },
+    "laa_sec_in_report": {
+      "question": "Left atrial appendage: spontaneous echo contrast: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "yes"
+    },
+    "laa_sec_grade": {
+      "question": "Left atrial appendage: spontaneous echo contrast grade",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "mild",
+        "moderate",
+        "severe",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "laa_sec_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "laa_sec_acuity": {
+      "question": "Left atrial appendage spontaneous echo contrast: acuity of finding",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "laa_sec_in_report": "yes"
+      },
+      "answer": "not_applicable"
+    },
+    "laa_device_in_report": {
+      "question": "Left atrial appendage: devices: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "yes"
+    },
+    "laa_device_type": {
+      "question": "Left atrial appendage device: type",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "watchman_or_watchman_flx",
+        "amplatzer_amulet",
+        "lariat_epicardial_ligation",
+        "surgical_clip_or_ligation",
+        "other",
+        "cannot_identify"
+      ],
+      "option_labels": {
+        "cannot_identify": "Cannot identify from present data"
+      },
+      "only_if": {
+        "laa_device_in_report": "yes"
+      },
+      "answer": "cannot_identify"
+    },
+    "laa_device_size": {
+      "question": "Left atrial appendage device: size (mm)",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "less_than_20_mm",
+        "20_24_mm",
+        "25_29_mm",
+        "30_35_mm",
+        "more_than_35_mm",
+        "not_determinable"
+      ],
+      "option_labels": {
+        "not_determinable": "Not determinable from present data"
+      },
+      "only_if": {
+        "laa_device_in_report": "yes"
+      },
+      "answer": "not_determinable"
+    },
+    "laa_device_type_other_description": {
+      "question": "Left atrial appendage device: type: describe 'Other'",
+      "type": "text",
+      "subsection": "Left Atrial Appendage",
+      "optional": true,
+      "only_if": {
+        "laa_device_type": "other"
+      },
+      "answer": null
+    },
+    "laa_device_pathologic_findings": {
+      "question": "Left atrial appendage device: pathologic findings (select all that apply)",
+      "type": "multi",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "none",
+        "device_malposition",
+        "peri_device_leak",
+        "thrombus_on_device",
+        "not_adequately_visualized",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "laa_device_in_report": "yes"
+      },
+      "answer": [
+        "cannot_evaluate"
+      ]
+    },
+    "laa_device_acuity": {
+      "question": "Left atrial appendage devices: acuity of finding",
+      "type": "single",
+      "subsection": "Left Atrial Appendage",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "laa_device_in_report": "yes"
+      },
+      "answer": "not_applicable"
+    },
+    "pulmonary_vein_flow_pattern_in_report": {
+      "question": "Pulmonary vein flow pattern: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Pulmonary Veins",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "yes"
+    },
+    "pulmonary_vein_flow_pattern": {
+      "question": "Pulmonary vein flow pattern",
+      "type": "single",
+      "subsection": "Pulmonary Veins",
+      "options": [
+        "normal",
+        "systolic_blunting",
+        "systolic_reversal",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "pulmonary_vein_flow_pattern_in_report": "yes"
+      },
+      "answer": "cannot_evaluate"
+    },
+    "pulmonary_vein_flow_pattern_acuity": {
+      "question": "Pulmonary vein flow pattern: acuity of finding",
+      "type": "single",
+      "subsection": "Pulmonary Veins",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "pulmonary_vein_flow_pattern_in_report": "yes"
+      },
+      "answer": "not_applicable"
+    },
+    "strain_in_report": {
+      "question": "Left atrial strain: does this parameter need to be in the report?",
+      "type": "single",
+      "subsection": "Function",
+      "options": [
+        "yes",
+        "no"
+      ],
+      "answer": "no"
+    },
+    "strain": {
+      "question": "Left atrial strain",
+      "type": "single",
+      "subsection": "Function",
+      "options": [
+        "normal",
+        "abnormal",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "strain_in_report": "yes"
+      },
+      "answer": null
+    },
+    "reservoir_strain_value": {
+      "question": "Left atrial reservoir strain value (%)",
+      "type": "single",
+      "subsection": "Function",
+      "optional": true,
+      "options": [
+        "less_than_10_pct",
+        "10_14_pct",
+        "15_19_pct",
+        "20_24_pct",
+        "25_29_pct",
+        "30_34_pct",
+        "35_39_pct",
+        "40_44_pct",
+        "45_49_pct",
+        "50_pct_or_more",
+        "cannot_evaluate"
+      ],
+      "only_if": {
+        "strain_in_report": "yes"
+      },
+      "answer": null
+    },
+    "strain_acuity": {
+      "question": "Left atrial strain: acuity of finding",
+      "type": "single",
+      "subsection": "Function",
+      "options": [
+        "routine",
+        "significant",
+        "urgent",
+        "critical",
+        "not_applicable"
+      ],
+      "option_labels": {
+        "routine": "Routine — no special prioritization",
+        "significant": "Significant — highlight in the summary; consider consultation or follow-up testing",
+        "urgent": "Urgent — clinical action within hours; direct notification of the care team",
+        "critical": "Critical — threat to life; immediate verbal notification (within minutes)",
+        "not_applicable": "Not applicable (finding absent or not evaluable)"
+      },
+      "only_if": {
+        "strain_in_report": "yes"
+      },
+      "answer": null
+    }
+  }
+}
