@@ -1,9 +1,9 @@
 FROM python:3.12-slim
 
 # Tools for reading the study: poppler-utils (pdftotext/pdftoppm) for the clinical context PDF,
-# ffmpeg/ffprobe for the MP4 clips, Pillow for the stills.
+# ffmpeg/ffprobe for the MP4 clips, Pillow for the stills, jq for inspecting the report JSONs.
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg poppler-utils \
+    && apt-get install -y --no-install-recommends ffmpeg poppler-utils jq \
     && rm -rf /var/lib/apt/lists/* \
     && pip install --no-cache-dir pillow==11.0.0
 

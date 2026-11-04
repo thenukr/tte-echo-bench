@@ -7,7 +7,7 @@ The study is in `/app/study/`. Review all of it before you report:
 - `Images/`: the imaging, with 27 MP4 cine clips and 39 JPEG stills named `Patient_007_<n>`.
   `Images/Thumbnails/` has a small preview frame for each of the 66 items.
 
-`pdftotext`/`pdftoppm` (poppler), `ffmpeg`/`ffprobe` and Pillow are installed.
+`pdftotext`/`pdftoppm` (poppler), `ffmpeg`/`ffprobe` and Pillow are installed. Use these toosl to view cine loop MP4s at an appropriate frame sampling rate. 
 
 The report form is in `/app/report/`, with one JSON file per cardiac structure (left ventricle, right
 ventricle, left atrium, right atrium, valves, pericardium, aorta and the rest). Each file has a
@@ -30,5 +30,3 @@ appear in the report at all. Answer `yes` only when it is present or clinically 
 being seen for the first time. Any finding graded `significant`, `urgent` or `critical` goes into the
 summary headline.
 
-Do not rename, add or remove files or fields, and do not change anything except the `answer` values.
-The report is graded on the files in `/app/report/` when you finish.
