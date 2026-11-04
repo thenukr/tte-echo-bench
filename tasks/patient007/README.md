@@ -4,7 +4,7 @@ The agent reads a TTE study and fills out a structured report (one JSON per card
 
 | Path | What it is | Who sees it |
 | - | - | - |
-| `environment/study/` | Study imaging, copied to `/app/study/`. **Placeholder until the study is added.** | agent |
+| `environment/study/` | Study data, copied to `/app/study/`: the clinical context docx and `Images/` (27 MP4 clips, 39 JPEG stills, `Thumbnails/`). From the patient007 Google Drive folder (`1fUNjryLd5hRcq0plItNitxbJS5077Evu`). | agent |
 | `environment/report_template/` | Blank report, copied to `/app/report/`. The agent fills in the `answer` values. | agent |
 | `tests/templates/` | Copy of the blank report, used to validate the agent's output | verifier |
 | `tests/expert_answers/` | Expert answers from the Tally form, one file per section, keyed by the same field and option slugs. `experts.json` maps `expert_N` to Tally submission ids. | verifier |

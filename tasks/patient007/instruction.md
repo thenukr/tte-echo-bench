@@ -1,6 +1,13 @@
 You are reading a transthoracic echocardiogram (TTE) and writing up the structured findings.
 
-The study imaging is in `/app/study/`. Read through all of it before you report.
+The study is in `/app/study/`. Review all of it before you report:
+
+- `Patient_007_clinical_context_and_study_data.docx`: the clinical context, the signed measurement
+  table, and the measurements transcribed from the ultrasound system's own display.
+- `Images/`: the imaging, with 27 MP4 cine clips and 39 JPEG stills named `Patient_007_<n>`.
+  `Images/Thumbnails/` has a small preview frame for each of the 66 items.
+
+`ffmpeg`/`ffprobe` and Pillow are installed.
 
 The report form is in `/app/report/`, with one JSON file per cardiac structure (left ventricle, right
 ventricle, left atrium, right atrium, valves, pericardium, aorta and the rest). Each file has a
