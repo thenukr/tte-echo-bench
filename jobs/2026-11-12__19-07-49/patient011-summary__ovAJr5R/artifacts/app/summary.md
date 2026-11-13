@@ -1,0 +1,5 @@
+Normal left ventricular cavity size with mild concentric wall thickening and preserved systolic function (visual LVEF 60–65%). No regional wall-motion abnormalities. The retaken measurements (septum 1.10 cm, posterior wall 1.12 cm, LV end-diastolic diameter 4.64 cm) favor concentric remodeling: relative wall thickness is 0.48 and calculated absolute LV mass is approximately 186 g; body size is unavailable for indexing. Septal tissue Doppler suggests impaired relaxation, but diastolic grade and left atrial pressure remain indeterminate because of inconsistent annular Doppler recordings and unavailable indexed LA volume.
+
+Normal right ventricular size and systolic function. Atria are not enlarged. Trileaflet aortic valve without stenosis or regurgitation. Trivial mitral, tricuspid, and pulmonic regurgitation; no hemodynamically significant valve disease. Normal aortic root diameter (3.0 cm). No pericardial effusion.
+
+Normal-caliber, collapsible IVC supports an estimated right atrial pressure of 3 mmHg. RV systolic pressure cannot be reliably estimated because the tricuspid regurgitation Doppler envelope is incomplete. No prior study is available for comparison.

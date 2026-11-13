@@ -1,0 +1,20 @@
+{
+    "job_name": "2026-11-12__19-07-49",
+    "jobs_dir": "/tmp/harbor-codex",
+    "n_attempts": 10,
+    "n_concurrent_trials": 10,
+    "agents": [
+        {
+            "name": "codex",
+            "model_name": "gpt-6-astra",
+            "kwargs": {
+                "reasoning_effort": "xhigh"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/home/ubuntu/patient011-summary"
+        }
+    ]
+}

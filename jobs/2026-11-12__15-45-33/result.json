@@ -1,0 +1,54 @@
+{
+    "id": "9c0409ec-cad8-41d5-aa58-281e8c51647b",
+    "started_at": "2026-11-12T15:45:35.747179",
+    "updated_at": "2026-11-12T15:57:46.270716",
+    "finished_at": "2026-11-12T15:57:46.270716",
+    "n_total_trials": 10,
+    "stats": {
+        "n_completed_trials": 10,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "codex__gpt-6-astra__adhoc": {
+                "n_trials": 10,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "pass_at_k": {
+                    "2": 1.0,
+                    "4": 1.0,
+                    "5": 1.0,
+                    "8": 1.0,
+                    "10": 1.0
+                },
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "patient011-task__8ody48c",
+                            "patient011-task__F956WBx",
+                            "patient011-task__vah4DWT",
+                            "patient011-task__bieHtnH",
+                            "patient011-task__fQXmcKb",
+                            "patient011-task__7pcgsZy",
+                            "patient011-task__kPPprtq",
+                            "patient011-task__DGpgyMP",
+                            "patient011-task__6g3k6Vo",
+                            "patient011-task__tRWcREA"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": 22598684,
+        "n_cache_tokens": 20897096,
+        "n_output_tokens": 127855,
+        "cost_usd": 48.557888500000004
+    }
+}

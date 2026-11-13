@@ -1,0 +1,5 @@
+Normal-sized left ventricle (end-diastolic diameter 4.64 cm on the retaken measurement) with mild concentric wall thickening, approximately 1.1 cm, favoring concentric remodeling. Normal LV systolic function, visually estimated LVEF 60–65%, without regional wall-motion abnormalities. Mitral annular tissue velocities indicate impaired relaxation; diastolic grade and left atrial pressure remain indeterminate because of suboptimal lateral tissue Doppler and insufficient corroborating measurements.
+
+Normal right ventricular size and systolic function. Both atria are normal in size. Trivial mitral, tricuspid and pulmonic regurgitation; no significant valvular stenosis or aortic regurgitation. Normal aortic root diameter (3.0 cm). No pericardial effusion.
+
+RV systolic pressure cannot be reliably estimated because the tricuspid regurgitation Doppler envelope is inadequate. The IVC is nondilated, but respiratory collapse is not adequately documented to assign right atrial pressure. No prior study is available for comparison.

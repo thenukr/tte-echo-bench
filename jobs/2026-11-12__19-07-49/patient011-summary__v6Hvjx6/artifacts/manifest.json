@@ -1,0 +1,26 @@
+[
+  {
+    "source": "/logs/artifacts",
+    "destination": "artifacts/logs/artifacts",
+    "type": "directory",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/findings_form.csv",
+    "destination": "artifacts/app/findings_form.csv",
+    "type": "file",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  },
+  {
+    "source": "/app/summary.md",
+    "destination": "artifacts/app/summary.md",
+    "type": "file",
+    "status": "ok",
+    "service": null,
+    "exclude": []
+  }
+]

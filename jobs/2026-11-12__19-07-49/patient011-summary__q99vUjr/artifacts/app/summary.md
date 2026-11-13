@@ -1,0 +1,5 @@
+Normal left ventricular cavity size (LVIDd 4.64 cm) with mild concentric wall thickening (septum 1.10 cm, posterior wall 1.12 cm) and preserved systolic function, visually estimated LVEF 60–65%. No regional wall motion abnormalities. Indexed LV mass cannot be assessed without body size data. Reduced septal early diastolic annular velocity suggests impaired relaxation; diastolic dysfunction grade and left atrial pressure are indeterminate because of limited Doppler data.
+
+Normal right ventricular size and systolic function. The atria are not enlarged visually. Trace mitral, tricuspid, and pulmonic regurgitation; no significant valvular stenosis or aortic regurgitation. The aortic root is normal in size (3.0 cm). No pericardial effusion.
+
+RV systolic pressure cannot be estimated reliably because the tricuspid regurgitation Doppler envelope is inadequate. The inferior vena cava is not dilated (1.16 cm), but respiratory collapse is not adequately documented for a reliable right atrial pressure estimate. No prior study is available for comparison.
