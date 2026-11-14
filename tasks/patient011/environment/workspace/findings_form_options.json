@@ -1,0 +1,3770 @@
+[
+ {
+  "column": "Size",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Small",
+   "Dilated",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Size Severity",
+  "section": "Left Ventricle",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Left ventricle size: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Wall thickness",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Increased",
+   "Decreased (thinned)",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Wall thickness severity",
+  "section": "Left Ventricle",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Left ventricle wall thickness: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Left ventricular mass",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Concentric hypertrophy",
+   "Eccentric hypertrophy",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Left ventricular mass severity",
+  "section": "Left Ventricle",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Left ventricular mass: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Intracavitary or myocardial masses: does this parameter need to be in the report?",
+  "section": "Left Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "LV mass: suspected etiology (consistent with)",
+  "section": "Left Ventricle",
+  "options": [
+   "Thrombus",
+   "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+   "Vegetation",
+   "Normal variant (e.g. false tendon, prominent trabeculation, artifact)",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Intracavitary or myocardial masses: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "LV mass: location",
+  "section": "Left Ventricle",
+  "options": [
+   "Apex",
+   "Anterior wall",
+   "Septum",
+   "Inferior wall",
+   "Lateral wall",
+   "LV outflow tract",
+   "Attached to mitral apparatus (chordae or papillary muscle)",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LV mass: size (largest dimension)",
+  "section": "Left Ventricle",
+  "options": [
+   "Less than 0.5 cm",
+   "0.5–0.9 cm",
+   "1.0–1.4 cm",
+   "1.5–1.9 cm",
+   "2.0–2.9 cm",
+   "3.0–3.9 cm",
+   "4.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LV mass: echogenicity",
+  "section": "Left Ventricle",
+  "options": [
+   "Echodense (bright)",
+   "Echolucent (dark)",
+   "Mixed / heterogeneous",
+   "Same brightness as heart muscle (isoechoic)",
+   "Calcified",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LV mass: shape and attachment",
+  "section": "Left Ventricle",
+  "options": [
+   "Round or oval, well-defined",
+   "Irregular or lobulated",
+   "Flat, layered along the wall (laminar)",
+   "Broad-based (sessile)",
+   "On a stalk (pedunculated)",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LV mass: describe 'Other'",
+  "section": "Left Ventricle",
+  "answer": "free text",
+  "answer_only_if": "[LV mass: location] CONTAINS \"Other\" OR [LV mass: echogenicity] CONTAINS \"Other\" OR [LV mass: shape and attachment] CONTAINS \"Other\""
+ },
+ {
+  "column": "LV mass: mobility",
+  "section": "Left Ventricle",
+  "options": [
+   "Fixed",
+   "Mobile",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Left ventricle intracavitary or myocardial masses: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Intracavitary or myocardial masses: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left ventricular upper septal morphology: does this parameter need to be in the report?",
+  "section": "Left Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Upper septal finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Discrete subaortic membrane",
+   "Discrete upper septal hypertrophy (sigmoid septum)",
+   "Asymmetric septal hypertrophy",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left ventricular upper septal morphology: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Upper septal morphology: hemodynamic consequence",
+  "section": "Left Ventricle",
+  "options": [
+   "None",
+   "LVOT obstruction at rest",
+   "LVOT obstruction with provocation only",
+   "Systolic anterior motion of the mitral valve",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left ventricular upper septal morphology: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left ventricular upper septal morphology: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Left ventricular upper septal morphology: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aneurysm, pseudoaneurysm or diverticulum: does this parameter need to be in the report?",
+  "section": "Left Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Aneurysm, pseudoaneurysm or diverticulum: type",
+  "section": "Left Ventricle",
+  "options": [
+   "Aneurysm",
+   "Pseudoaneurysm",
+   "Diverticulum",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aneurysm, pseudoaneurysm or diverticulum: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aneurysm, pseudoaneurysm or diverticulum: location",
+  "section": "Left Ventricle",
+  "options": [
+   "Apical",
+   "Anterior",
+   "Anteroseptal",
+   "Inferoseptal",
+   "Inferior",
+   "Inferolateral",
+   "Anterolateral",
+   "Basal",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aneurysm, pseudoaneurysm or diverticulum: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aneurysm, pseudoaneurysm or diverticulum: size (largest dimension)",
+  "section": "Left Ventricle",
+  "options": [
+   "Less than 1.0 cm",
+   "1.0–1.9 cm",
+   "2.0–2.9 cm",
+   "3.0–3.9 cm",
+   "4.0–4.9 cm",
+   "5.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aneurysm, pseudoaneurysm or diverticulum: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aneurysm, pseudoaneurysm or diverticulum: associated thrombus or mass",
+  "section": "Left Ventricle",
+  "options": [
+   "None",
+   "Thrombus",
+   "Mass",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aneurysm, pseudoaneurysm or diverticulum: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aneurysm, pseudoaneurysm or diverticulum: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Aneurysm, pseudoaneurysm or diverticulum: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Global systolic function",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Hyperdynamic",
+   "Reduced",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Global systolic function severity",
+  "section": "Left Ventricle",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Left ventricle global systolic function: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Ejection fraction",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Abnormal",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Ejection fraction value",
+  "section": "Left Ventricle",
+  "options": [
+   "5-10%",
+   "10-15%",
+   "15-20%",
+   "20-25%",
+   "25-30%",
+   "30-35%",
+   "35-40%",
+   "40-45%",
+   "45-50%",
+   "50-55%",
+   "55-60%",
+   "60-65%",
+   "65-70%",
+   ">70%",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Ejection fraction method (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "2D linear",
+   "2D or 3D volumetric",
+   "Visual",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true
+ },
+ {
+  "column": "Ejection fraction: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Regional wall motion abnormalities",
+  "section": "Left Ventricle",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Regional wall motion: walls involved (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Anterior",
+   "Anteroseptal",
+   "Inferoseptal",
+   "Inferior",
+   "Inferolateral",
+   "Anterolateral",
+   "Apex",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion abnormalities] CONTAINS \"Present\""
+ },
+ {
+  "column": "Anterior wall: level (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Basal",
+   "Mid",
+   "Apical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Anterior\""
+ },
+ {
+  "column": "Anterior wall: grade (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Anterior\""
+ },
+ {
+  "column": "Anteroseptal wall: level (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Basal",
+   "Mid",
+   "Apical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Anteroseptal\""
+ },
+ {
+  "column": "Anteroseptal wall: grade (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Anteroseptal\""
+ },
+ {
+  "column": "Inferoseptal wall: level (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Basal",
+   "Mid",
+   "Apical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Inferoseptal\""
+ },
+ {
+  "column": "Inferoseptal wall: grade (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Inferoseptal\""
+ },
+ {
+  "column": "Inferior wall: level (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Basal",
+   "Mid",
+   "Apical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Inferior\""
+ },
+ {
+  "column": "Inferior wall: grade (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Inferior\""
+ },
+ {
+  "column": "Inferolateral wall: level (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Basal",
+   "Mid",
+   "Apical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Inferolateral\""
+ },
+ {
+  "column": "Inferolateral wall: grade (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Inferolateral\""
+ },
+ {
+  "column": "Anterolateral wall: level (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Basal",
+   "Mid",
+   "Apical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Anterolateral\""
+ },
+ {
+  "column": "Anterolateral wall: grade (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Anterolateral\""
+ },
+ {
+  "column": "Apex: grade (select all that apply)",
+  "section": "Left Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Regional wall motion: walls involved (select all that apply)] CONTAINS \"Apex\""
+ },
+ {
+  "column": "Regional wall motion abnormalities: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Obstructive lesions (dynamic or structural): does this parameter need to be in the report?",
+  "section": "Left Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Obstructive lesion: type",
+  "section": "Left Ventricle",
+  "options": [
+   "Dynamic LVOT obstruction",
+   "Mid-cavity obstruction",
+   "Structural (fixed) obstruction",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Obstructive lesions (dynamic or structural): does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Obstructive lesion: peak gradient at rest (mmHg)",
+  "section": "Left Ventricle",
+  "options": [
+   "Less than 10 mmHg",
+   "10–19 mmHg",
+   "20–29 mmHg",
+   "30–39 mmHg",
+   "40–49 mmHg",
+   "50–64 mmHg",
+   "65–79 mmHg",
+   "80–99 mmHg",
+   "100 mmHg or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Obstructive lesions (dynamic or structural): does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Obstructive lesion: peak gradient with physiologic maneuver (mmHg)",
+  "section": "Left Ventricle",
+  "options": [
+   "Less than 10 mmHg",
+   "10–19 mmHg",
+   "20–29 mmHg",
+   "30–39 mmHg",
+   "40–49 mmHg",
+   "50–64 mmHg",
+   "65–79 mmHg",
+   "80–99 mmHg",
+   "100 mmHg or more",
+   "Not performed (obstruction not dynamic)",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Obstructive lesions (dynamic or structural): does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Obstructive lesions: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Obstructive lesions (dynamic or structural): does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Myocardial strain: does this parameter need to be in the report?",
+  "section": "Left Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Global longitudinal strain value (GLS, %)",
+  "section": "Left Ventricle",
+  "options": [
+   "−24% or more negative",
+   "−22 to −23.9%",
+   "−20 to −21.9%",
+   "−18 to −19.9%",
+   "−16 to −17.9%",
+   "−14 to −15.9%",
+   "−12 to −13.9%",
+   "−10 to −11.9%",
+   "−8 to −9.9%",
+   "Less negative than −8%",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Myocardial strain: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Global longitudinal strain",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Abnormal",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Myocardial strain: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Myocardial strain: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Myocardial strain: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Diastolic function or LV relaxation",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Abnormal (impaired)",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Diastolic function or LV relaxation: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Filling pressures",
+  "section": "Left Ventricle",
+  "options": [
+   "Normal",
+   "Elevated",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Filling pressures refer to",
+  "section": "Left Ventricle",
+  "options": [
+   "Left atrial pressure",
+   "LV end-diastolic pressure",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Filling pressures: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Grade of LV diastolic dysfunction",
+  "section": "Left Ventricle",
+  "options": [
+   "Grade 1 (I)",
+   "Grade 2 (II)",
+   "Grade 3 (III)",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Diastolic function or LV relaxation] CONTAINS \"Abnormal (impaired)\""
+ },
+ {
+  "column": "Grade of LV diastolic dysfunction: acuity of finding",
+  "section": "Left Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Diastolic function or LV relaxation] CONTAINS \"Abnormal (impaired)\""
+ },
+ {
+  "column": "Ventricular septal defect: does this parameter need to be in the report?",
+  "section": "Interventricular Septum",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Ventricular septal defect: type",
+  "section": "Interventricular Septum",
+  "options": [
+   "Perimembranous",
+   "Inlet",
+   "Muscular",
+   "Outlet",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Ventricular septal defect: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Ventricular septal defect: size",
+  "section": "Interventricular Septum",
+  "options": [
+   "Small",
+   "Moderate",
+   "Large",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Ventricular septal defect: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Ventricular septal defect: number",
+  "section": "Interventricular Septum",
+  "options": [
+   "Single",
+   "Multiple",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Ventricular septal defect: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Ventricular septal defect: acuity of finding",
+  "section": "Interventricular Septum",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Ventricular septal defect: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Abnormal septal motion: does this parameter need to be in the report?",
+  "section": "Interventricular Septum",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Abnormal septal motion: type (select all that apply)",
+  "section": "Interventricular Septum",
+  "options": [
+   "Flattening in systole",
+   "Flattening in diastole",
+   "Dyssynchronous",
+   "Paradoxical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Abnormal septal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Abnormal septal motion: reason or explanation",
+  "section": "Interventricular Septum",
+  "options": [
+   "RV pressure overload",
+   "RV volume overload",
+   "Conduction abnormality (bundle branch block, pacing)",
+   "Post-operative",
+   "Other",
+   "Undetermined",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Abnormal septal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Abnormal septal motion: reason or explanation: describe 'Other'",
+  "section": "Interventricular Septum",
+  "answer": "free text",
+  "answer_only_if": "[Abnormal septal motion: reason or explanation] CONTAINS \"Other\""
+ },
+ {
+  "column": "Abnormal septal motion: acuity of finding",
+  "section": "Interventricular Septum",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Abnormal septal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Ventricular septal shunt: does this parameter need to be in the report?",
+  "section": "Interventricular Septum",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Ventricular septal shunt: direction",
+  "section": "Interventricular Septum",
+  "options": [
+   "Left-to-right",
+   "Right-to-left",
+   "Bidirectional",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Ventricular septal shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Ventricular septal shunt: detection technique (select all that apply)",
+  "section": "Interventricular Septum",
+  "options": [
+   "Color flow Doppler",
+   "Continuous wave Doppler",
+   "Pulsed wave Doppler",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Ventricular septal shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Ventricular septal shunt: peak gradient across the defect (mmHg)",
+  "section": "Interventricular Septum",
+  "options": [
+   "Less than 20 mmHg",
+   "20–39 mmHg",
+   "40–59 mmHg",
+   "60–79 mmHg",
+   "80–99 mmHg",
+   "100 mmHg or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Ventricular septal shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Ventricular septal shunt: acuity of finding",
+  "section": "Interventricular Septum",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Ventricular septal shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Size (2)",
+  "section": "Right Ventricle",
+  "options": [
+   "Normal",
+   "Small",
+   "Dilated",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Size severity",
+  "section": "Right Ventricle",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not reliably measurable",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Right ventricle size: acuity of finding",
+  "section": "Right Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Wall thickness (2)",
+  "section": "Right Ventricle",
+  "options": [
+   "Normal",
+   "Increased",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Right ventricle wall thickness: acuity of finding",
+  "section": "Right Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Intracavitary or myocardial masses: does this parameter need to be in the report? (2)",
+  "section": "Right Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "RV mass: suspected etiology (consistent with)",
+  "section": "Right Ventricle",
+  "options": [
+   "Thrombus",
+   "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+   "Vegetation",
+   "Normal variant (e.g. false tendon, prominent trabeculation, artifact)",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Intracavitary or myocardial masses: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "RV mass: location",
+  "section": "Right Ventricle",
+  "options": [
+   "Apex",
+   "RV free wall",
+   "Septum (RV side)",
+   "RV outflow tract",
+   "Attached to tricuspid apparatus",
+   "Moderator band region",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RV mass: size (largest dimension)",
+  "section": "Right Ventricle",
+  "options": [
+   "Less than 0.5 cm",
+   "0.5–0.9 cm",
+   "1.0–1.4 cm",
+   "1.5–1.9 cm",
+   "2.0–2.9 cm",
+   "3.0–3.9 cm",
+   "4.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RV mass: echogenicity",
+  "section": "Right Ventricle",
+  "options": [
+   "Echodense (bright)",
+   "Echolucent (dark)",
+   "Mixed / heterogeneous",
+   "Same brightness as heart muscle (isoechoic)",
+   "Calcified",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RV mass: shape and attachment",
+  "section": "Right Ventricle",
+  "options": [
+   "Round or oval, well-defined",
+   "Irregular or lobulated",
+   "Flat, layered along the wall (laminar)",
+   "Broad-based (sessile)",
+   "On a stalk (pedunculated)",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RV mass: describe 'Other'",
+  "section": "Right Ventricle",
+  "answer": "free text",
+  "answer_only_if": "[RV mass: location] CONTAINS \"Other\" OR [RV mass: echogenicity] CONTAINS \"Other\" OR [RV mass: shape and attachment] CONTAINS \"Other\""
+ },
+ {
+  "column": "RV mass: mobility",
+  "section": "Right Ventricle",
+  "options": [
+   "Fixed",
+   "Mobile",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RV mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Right ventricle intracavitary or myocardial masses: acuity of finding",
+  "section": "Right Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Intracavitary or myocardial masses: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "Catheters or device leads: does this parameter need to be in the report?",
+  "section": "Right Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Catheter or device lead: type",
+  "section": "Right Ventricle",
+  "options": [
+   "Pacemaker or ICD lead",
+   "Central venous catheter",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Catheter or device lead: type: describe 'Other'",
+  "section": "Right Ventricle",
+  "answer": "free text",
+  "answer_only_if": "[Catheter or device lead: type] CONTAINS \"Other\""
+ },
+ {
+  "column": "Catheter or device lead: location",
+  "section": "Right Ventricle",
+  "options": [
+   "Crossing the tricuspid valve to the RV apex",
+   "RV apex",
+   "RV septum (septal lead)",
+   "RV outflow tract",
+   "Free-floating or not seated",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Catheter or device lead: location: describe 'Other'",
+  "section": "Right Ventricle",
+  "answer": "free text",
+  "answer_only_if": "[Catheter or device lead: location] CONTAINS \"Other\""
+ },
+ {
+  "column": "Catheter or device lead: associated masses",
+  "section": "Right Ventricle",
+  "options": [
+   "None",
+   "Thrombus",
+   "Vegetation",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Right ventricle catheters or device leads: acuity of finding",
+  "section": "Right Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Global systolic function (2)",
+  "section": "Right Ventricle",
+  "options": [
+   "Normal",
+   "Reduced",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Global systolic function severity (2)",
+  "section": "Right Ventricle",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not reliably measurable",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Right ventricle global systolic function: acuity of finding",
+  "section": "Right Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Right ventricular regional wall motion abnormalities: does this parameter need to be in the report?",
+  "section": "Right Ventricle",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "RV regional wall motion: walls involved (select all that apply)",
+  "section": "Right Ventricle",
+  "options": [
+   "RV free wall",
+   "RV apex",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Right ventricular regional wall motion abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "RV free wall: level (select all that apply)",
+  "section": "Right Ventricle",
+  "options": [
+   "Basal",
+   "Mid",
+   "Apical",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[RV regional wall motion: walls involved (select all that apply)] CONTAINS \"RV free wall\""
+ },
+ {
+  "column": "RV free wall: grade (select all that apply)",
+  "section": "Right Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[RV regional wall motion: walls involved (select all that apply)] CONTAINS \"RV free wall\""
+ },
+ {
+  "column": "RV apex: grade (select all that apply)",
+  "section": "Right Ventricle",
+  "options": [
+   "Hyperkinetic",
+   "Hypokinetic",
+   "Akinetic",
+   "Dyskinetic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[RV regional wall motion: walls involved (select all that apply)] CONTAINS \"RV apex\""
+ },
+ {
+  "column": "Right ventricular regional wall motion abnormalities: acuity of finding",
+  "section": "Right Ventricle",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Right ventricular regional wall motion abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Size (3)",
+  "section": "Left Atrium",
+  "options": [
+   "Normal",
+   "Dilated",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Size severity (2)",
+  "section": "Left Atrium",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Left atrium size: acuity of finding",
+  "section": "Left Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Intracavitary masses: does this parameter need to be in the report?",
+  "section": "Left Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "LA mass: suspected etiology (consistent with)",
+  "section": "Left Atrium",
+  "options": [
+   "Thrombus",
+   "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+   "Vegetation",
+   "Normal variant (e.g. prominent structure, artifact)",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Intracavitary masses: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "LA mass: location",
+  "section": "Left Atrium",
+  "options": [
+   "Interatrial septum (fossa ovalis)",
+   "Posterior wall",
+   "Roof",
+   "Near a pulmonary vein ostium",
+   "Attached to the mitral annulus or leaflet",
+   "Free-floating",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LA mass: size (largest dimension)",
+  "section": "Left Atrium",
+  "options": [
+   "Less than 0.5 cm",
+   "0.5–0.9 cm",
+   "1.0–1.4 cm",
+   "1.5–1.9 cm",
+   "2.0–2.9 cm",
+   "3.0–3.9 cm",
+   "4.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LA mass: echogenicity",
+  "section": "Left Atrium",
+  "options": [
+   "Echodense (bright)",
+   "Echolucent (dark)",
+   "Mixed / heterogeneous",
+   "Same brightness as heart muscle (isoechoic)",
+   "Calcified",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LA mass: shape and attachment",
+  "section": "Left Atrium",
+  "options": [
+   "Round or oval, well-defined",
+   "Irregular or lobulated",
+   "Flat, layered along the wall (laminar)",
+   "Broad-based (sessile)",
+   "On a stalk (pedunculated)",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "LA mass: describe 'Other'",
+  "section": "Left Atrium",
+  "answer": "free text",
+  "answer_only_if": "[LA mass: location] CONTAINS \"Other\" OR [LA mass: echogenicity] CONTAINS \"Other\" OR [LA mass: shape and attachment] CONTAINS \"Other\""
+ },
+ {
+  "column": "LA mass: mobility",
+  "section": "Left Atrium",
+  "options": [
+   "Fixed",
+   "Mobile",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[LA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Left atrium intracavitary masses: acuity of finding",
+  "section": "Left Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Intracavitary masses: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage: intracavitary masses: does this parameter need to be in the report?",
+  "section": "Left Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Left atrial appendage mass: suspected etiology (consistent with)",
+  "section": "Left Atrium",
+  "options": [
+   "Thrombus",
+   "Neoplasm",
+   "Vegetation",
+   "Normal variant (e.g. pectinate muscle, artifact)",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage: intracavitary masses: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage mass: location",
+  "section": "Left Atrium",
+  "options": [
+   "Tip (apex) of the appendage",
+   "Body of the appendage",
+   "Ostium (mouth) of the appendage",
+   "Fills the entire appendage",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Left atrial appendage mass: size (largest dimension)",
+  "section": "Left Atrium",
+  "options": [
+   "Less than 0.5 cm",
+   "0.5–0.9 cm",
+   "1.0–1.4 cm",
+   "1.5–1.9 cm",
+   "2.0–2.9 cm",
+   "3.0–3.9 cm",
+   "4.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Left atrial appendage mass: echogenicity",
+  "section": "Left Atrium",
+  "options": [
+   "Echodense (bright)",
+   "Echolucent (dark)",
+   "Mixed / heterogeneous",
+   "Same brightness as heart muscle (isoechoic)",
+   "Calcified",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Left atrial appendage mass: shape and attachment",
+  "section": "Left Atrium",
+  "options": [
+   "Round or oval, well-defined",
+   "Irregular or lobulated",
+   "Flat, layered along the wall (laminar)",
+   "Broad-based (sessile)",
+   "On a stalk (pedunculated)",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Left atrial appendage mass: mobility",
+  "section": "Left Atrium",
+  "options": [
+   "Fixed",
+   "Mobile",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Left atrial appendage mass: describe 'Other'",
+  "section": "Left Atrium",
+  "answer": "free text",
+  "answer_only_if": "[Left atrial appendage mass: location] CONTAINS \"Other\" OR [Left atrial appendage mass: echogenicity] CONTAINS \"Other\" OR [Left atrial appendage mass: shape and attachment] CONTAINS \"Other\""
+ },
+ {
+  "column": "Left atrial appendage intracavitary masses: acuity of finding",
+  "section": "Left Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Left atrial appendage: intracavitary masses: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage: spontaneous echo contrast: does this parameter need to be in the report?",
+  "section": "Left Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Left atrial appendage: spontaneous echo contrast grade",
+  "section": "Left Atrium",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage: spontaneous echo contrast: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage spontaneous echo contrast: acuity of finding",
+  "section": "Left Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Left atrial appendage: spontaneous echo contrast: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage: devices: does this parameter need to be in the report?",
+  "section": "Left Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Left atrial appendage device: type",
+  "section": "Left Atrium",
+  "options": [
+   "Watchman or Watchman FLX",
+   "Amplatzer Amulet",
+   "Lariat (epicardial ligation)",
+   "Surgical clip or ligation",
+   "Other",
+   "Cannot identify from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage: devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage device: size (mm)",
+  "section": "Left Atrium",
+  "options": [
+   "Less than 20 mm",
+   "20–24 mm",
+   "25–29 mm",
+   "30–35 mm",
+   "More than 35 mm",
+   "Not determinable from present data"
+  ],
+  "answer_only_if": "[Left atrial appendage: devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage device: type: describe 'Other'",
+  "section": "Left Atrium",
+  "answer": "free text",
+  "answer_only_if": "[Left atrial appendage device: type] CONTAINS \"Other\""
+ },
+ {
+  "column": "Left atrial appendage device: pathologic findings (select all that apply)",
+  "section": "Left Atrium",
+  "options": [
+   "None",
+   "Device malposition",
+   "Peri-device leak",
+   "Thrombus on device",
+   "Not adequately visualized",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Left atrial appendage: devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial appendage devices: acuity of finding",
+  "section": "Left Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Left atrial appendage: devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonary vein flow pattern: does this parameter need to be in the report?",
+  "section": "Left Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Pulmonary vein flow pattern",
+  "section": "Left Atrium",
+  "options": [
+   "Normal",
+   "Systolic blunting",
+   "Systolic reversal",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Pulmonary vein flow pattern: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonary vein flow pattern: acuity of finding",
+  "section": "Left Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Pulmonary vein flow pattern: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial strain: does this parameter need to be in the report?",
+  "section": "Left Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Left atrial strain",
+  "section": "Left Atrium",
+  "options": [
+   "Normal",
+   "Abnormal",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial strain: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial reservoir strain value (%)",
+  "section": "Left Atrium",
+  "options": [
+   "Less than 10%",
+   "10–14%",
+   "15–19%",
+   "20–24%",
+   "25–29%",
+   "30–34%",
+   "35–39%",
+   "40–44%",
+   "45–49%",
+   "50% or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Left atrial strain: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Left atrial strain: acuity of finding",
+  "section": "Left Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Left atrial strain: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Size (4)",
+  "section": "Right Atrium",
+  "options": [
+   "Normal",
+   "Dilated",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Size severity (3)",
+  "section": "Right Atrium",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Right atrium size: acuity of finding",
+  "section": "Right Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Intracavitary masses: does this parameter need to be in the report? (2)",
+  "section": "Right Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "RA mass: suspected etiology (consistent with)",
+  "section": "Right Atrium",
+  "options": [
+   "Thrombus",
+   "Neoplasm (e.g. myxoma, fibroelastoma, other tumor)",
+   "Vegetation",
+   "Prominent normal structure (Eustachian valve, Chiari network, crista terminalis)",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Intracavitary masses: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "RA mass: location",
+  "section": "Right Atrium",
+  "options": [
+   "Interatrial septum",
+   "Free wall",
+   "Near the SVC or IVC junction",
+   "Attached to the tricuspid annulus or leaflet",
+   "On a catheter or device lead",
+   "Eustachian valve or Chiari network region",
+   "Free-floating",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RA mass: size (largest dimension)",
+  "section": "Right Atrium",
+  "options": [
+   "Less than 0.5 cm",
+   "0.5–0.9 cm",
+   "1.0–1.4 cm",
+   "1.5–1.9 cm",
+   "2.0–2.9 cm",
+   "3.0–3.9 cm",
+   "4.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RA mass: echogenicity",
+  "section": "Right Atrium",
+  "options": [
+   "Echodense (bright)",
+   "Echolucent (dark)",
+   "Mixed / heterogeneous",
+   "Same brightness as heart muscle (isoechoic)",
+   "Calcified",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RA mass: shape and attachment",
+  "section": "Right Atrium",
+  "options": [
+   "Round or oval, well-defined",
+   "Irregular or lobulated",
+   "Flat, layered along the wall (laminar)",
+   "Broad-based (sessile)",
+   "On a stalk (pedunculated)",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "RA mass: describe 'Other'",
+  "section": "Right Atrium",
+  "answer": "free text",
+  "answer_only_if": "[RA mass: location] CONTAINS \"Other\" OR [RA mass: echogenicity] CONTAINS \"Other\" OR [RA mass: shape and attachment] CONTAINS \"Other\""
+ },
+ {
+  "column": "RA mass: mobility",
+  "section": "Right Atrium",
+  "options": [
+   "Fixed",
+   "Mobile",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[RA mass: suspected etiology (consistent with)] IS ANY OF (\"Thrombus\", \"Neoplasm (e.g. myxoma, fibroelastoma, other tumor)\", \"Vegetation\", \"Indeterminate\")"
+ },
+ {
+  "column": "Right atrium intracavitary masses: acuity of finding",
+  "section": "Right Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Intracavitary masses: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "Spontaneous echo contrast: does this parameter need to be in the report?",
+  "section": "Right Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Right atrial spontaneous echo contrast grade",
+  "section": "Right Atrium",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Spontaneous echo contrast: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Right atrium spontaneous echo contrast: acuity of finding",
+  "section": "Right Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Spontaneous echo contrast: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Catheters or device leads: does this parameter need to be in the report? (2)",
+  "section": "Right Atrium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Right atrial catheter or device lead: type",
+  "section": "Right Atrium",
+  "options": [
+   "Pacemaker or ICD lead",
+   "Central venous catheter",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "Right atrial catheter or device lead: type: describe 'Other'",
+  "section": "Right Atrium",
+  "answer": "free text",
+  "answer_only_if": "[Right atrial catheter or device lead: type] CONTAINS \"Other\""
+ },
+ {
+  "column": "Right atrial catheter or device lead: location",
+  "section": "Right Atrium",
+  "options": [
+   "Right atrial appendage",
+   "RA free wall",
+   "SVC–RA junction",
+   "Passing through the RA toward the tricuspid valve",
+   "Coronary sinus",
+   "Free-floating or coiled in the RA",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "Right atrial catheter or device lead: location: describe 'Other'",
+  "section": "Right Atrium",
+  "answer": "free text",
+  "answer_only_if": "[Right atrial catheter or device lead: location] CONTAINS \"Other\""
+ },
+ {
+  "column": "Right atrial catheter or device lead: associated masses",
+  "section": "Right Atrium",
+  "options": [
+   "None",
+   "Thrombus",
+   "Vegetation",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "Right atrium catheters or device leads: acuity of finding",
+  "section": "Right Atrium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Catheters or device leads: does this parameter need to be in the report? (2)] IS \"Yes\""
+ },
+ {
+  "column": "Structural abnormalities",
+  "section": "Interatrial Septum",
+  "options": [
+   "Normal (intact)",
+   "Abnormal",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Interatrial septum: abnormality (select all that apply)",
+  "section": "Interatrial Septum",
+  "options": [
+   "Lipomatous hypertrophy",
+   "Aneurysmal septum",
+   "Bowing",
+   "Patent foramen ovale",
+   "Atrial septal defect",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Structural abnormalities] CONTAINS \"Abnormal\""
+ },
+ {
+  "column": "Interatrial septum: bowing direction",
+  "section": "Interatrial Septum",
+  "options": [
+   "Toward the left atrium",
+   "Toward the right atrium",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial septum: abnormality (select all that apply)] CONTAINS \"Bowing\""
+ },
+ {
+  "column": "Atrial septal defect: type",
+  "section": "Interatrial Septum",
+  "options": [
+   "Secundum",
+   "Primum",
+   "Sinus venosus",
+   "Coronary sinus",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial septum: abnormality (select all that apply)] CONTAINS \"Atrial septal defect\""
+ },
+ {
+  "column": "Interatrial septum structural abnormalities: acuity of finding",
+  "section": "Interatrial Septum",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Interatrial septal communications: does this parameter need to be in the report?",
+  "section": "Interatrial Septum",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Interatrial septal communication",
+  "section": "Interatrial Septum",
+  "options": [
+   "Present",
+   "Absent",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial septal communications: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial septal communication: type",
+  "section": "Interatrial Septum",
+  "options": [
+   "Patent foramen ovale",
+   "Secundum atrial septal defect",
+   "Primum atrial septal defect",
+   "Sinus venosus defect",
+   "Coronary sinus defect",
+   "Fenestrated or multiple defects",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial septal communications: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial septal communication: size (largest dimension)",
+  "section": "Interatrial Septum",
+  "options": [
+   "Less than 0.5 cm",
+   "0.5–0.9 cm",
+   "1.0–1.9 cm",
+   "2.0–2.9 cm",
+   "3.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial septal communications: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial septal communication: type: describe 'Other'",
+  "section": "Interatrial Septum",
+  "answer": "free text",
+  "answer_only_if": "[Interatrial septal communication: type] CONTAINS \"Other\""
+ },
+ {
+  "column": "Interatrial septal communications: acuity of finding",
+  "section": "Interatrial Septum",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Interatrial septal communications: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial septal devices: does this parameter need to be in the report?",
+  "section": "Interatrial Septum",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Atrial septal device: type",
+  "section": "Interatrial Septum",
+  "options": [
+   "Amplatzer septal occluder (ASD)",
+   "Amplatzer PFO occluder",
+   "Gore Cardioform occluder",
+   "Surgical patch or suture closure",
+   "Other",
+   "Cannot identify from present data"
+  ],
+  "answer_only_if": "[Interatrial septal devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Atrial septal device: size (mm)",
+  "section": "Interatrial Septum",
+  "options": [
+   "Less than 10 mm",
+   "10–19 mm",
+   "20–29 mm",
+   "30–39 mm",
+   "40 mm or more",
+   "Not determinable from present data"
+  ],
+  "answer_only_if": "[Interatrial septal devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Atrial septal device: type: describe 'Other'",
+  "section": "Interatrial Septum",
+  "answer": "free text",
+  "answer_only_if": "[Atrial septal device: type] CONTAINS \"Other\""
+ },
+ {
+  "column": "Atrial septal device: pathologic findings (select all that apply)",
+  "section": "Interatrial Septum",
+  "options": [
+   "None",
+   "Device malposition",
+   "Peri-device leak",
+   "Thrombus on device",
+   "Not adequately visualized",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Interatrial septal devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial septal devices: acuity of finding",
+  "section": "Interatrial Septum",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Interatrial septal devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial shunt: does this parameter need to be in the report?",
+  "section": "Interatrial Septum",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Interatrial shunt: direction",
+  "section": "Interatrial Septum",
+  "options": [
+   "Left-to-right",
+   "Right-to-left",
+   "Bidirectional",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial shunt: location",
+  "section": "Interatrial Septum",
+  "options": [
+   "Intracardiac",
+   "Intrapulmonary",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial shunt: detection technique (select all that apply)",
+  "section": "Interatrial Septum",
+  "options": [
+   "Color flow Doppler",
+   "Agitated saline",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Interatrial shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial shunt: Qp:Qs",
+  "section": "Interatrial Septum",
+  "options": [
+   "Less than 1.0 (net right-to-left)",
+   "1.0–1.2",
+   "1.3–1.4",
+   "1.5–1.9",
+   "2.0–2.4",
+   "2.5–2.9",
+   "3.0 or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Interatrial shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Interatrial shunt: acuity of finding",
+  "section": "Interatrial Septum",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Interatrial shunt: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic valve structure",
+  "section": "Aortic Valve",
+  "options": [
+   "Structurally normal",
+   "Structurally abnormal",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Aortic valve: number of leaflets",
+  "section": "Aortic Valve",
+  "options": [
+   "Trileaflet",
+   "Bicuspid",
+   "Unicuspid",
+   "Quadricuspid",
+   "Not determined",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Aortic valve structure: acuity of finding",
+  "section": "Aortic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Aortic valve structural abnormalities: does this parameter need to be in the report?",
+  "section": "Aortic Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Aortic valve: structural abnormality (select all that apply)",
+  "section": "Aortic Valve",
+  "options": [
+   "Bicuspid",
+   "Unicuspid",
+   "Quadricuspid",
+   "Thickening",
+   "Annular calcification",
+   "Valvular calcification",
+   "Perforation",
+   "Mass or vegetation",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Aortic valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic valve: structural abnormality: describe 'Other'",
+  "section": "Aortic Valve",
+  "answer": "free text",
+  "answer_only_if": "[Aortic valve: structural abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Bicuspid aortic valve: type",
+  "section": "Aortic Valve",
+  "options": [
+   "Type 0 (no raphe)",
+   "Type 1 (one raphe)",
+   "Type 2 (two raphes)",
+   "Not determined",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aortic valve: structural abnormality (select all that apply)] CONTAINS \"Bicuspid\""
+ },
+ {
+  "column": "Aortic valve: suspected etiology",
+  "section": "Aortic Valve",
+  "options": [
+   "Degenerative (calcific)",
+   "Congenital",
+   "Rheumatic",
+   "Endocarditis",
+   "Other",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aortic valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic valve: suspected etiology: describe 'Other'",
+  "section": "Aortic Valve",
+  "answer": "free text",
+  "answer_only_if": "[Aortic valve: suspected etiology] CONTAINS \"Other\""
+ },
+ {
+  "column": "Aortic valve structural abnormalities: acuity of finding",
+  "section": "Aortic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Aortic valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic valve abnormal motion: does this parameter need to be in the report?",
+  "section": "Aortic Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Aortic valve: abnormal motion (select all that apply)",
+  "section": "Aortic Valve",
+  "options": [
+   "Restricted leaflet motion",
+   "Doming",
+   "Eccentric closure",
+   "Flail",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Aortic valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic valve abnormal motion: acuity of finding",
+  "section": "Aortic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Aortic valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic stenosis: does this parameter need to be in the report?",
+  "section": "Aortic Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Aortic stenosis severity",
+  "section": "Aortic Valve",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Very severe",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aortic stenosis: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic stenosis: mechanism",
+  "section": "Aortic Valve",
+  "options": [
+   "Calcific degenerative",
+   "Bicuspid",
+   "Rheumatic",
+   "Subvalvular",
+   "Supravalvular",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aortic stenosis: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic stenosis: mechanism: describe 'Other'",
+  "section": "Aortic Valve",
+  "answer": "free text",
+  "answer_only_if": "[Aortic stenosis: mechanism] CONTAINS \"Other\""
+ },
+ {
+  "column": "Aortic stenosis: acuity of finding",
+  "section": "Aortic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Aortic stenosis: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic regurgitation",
+  "section": "Aortic Valve",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Aortic regurgitation severity",
+  "section": "Aortic Valve",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Trivial",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Aortic regurgitation: mechanism",
+  "section": "Aortic Valve",
+  "options": [
+   "Degenerative",
+   "Bicuspid",
+   "Aortic root dilatation",
+   "Prolapse",
+   "Perforation",
+   "Rheumatic",
+   "Endocarditis",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aortic regurgitation] CONTAINS \"Present\""
+ },
+ {
+  "column": "Aortic regurgitation: mechanism: describe 'Other'",
+  "section": "Aortic Valve",
+  "answer": "free text",
+  "answer_only_if": "[Aortic regurgitation: mechanism] CONTAINS \"Other\""
+ },
+ {
+  "column": "Aortic regurgitation: acuity of finding",
+  "section": "Aortic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Mitral valve structure",
+  "section": "Mitral Valve",
+  "options": [
+   "Structurally normal",
+   "Structurally abnormal",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Mitral valve structure: acuity of finding",
+  "section": "Mitral Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Mitral valve structural abnormalities: does this parameter need to be in the report?",
+  "section": "Mitral Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Mitral valve: structural abnormality (select all that apply)",
+  "section": "Mitral Valve",
+  "options": [
+   "Leaflet thickening",
+   "Leaflet calcification",
+   "Annular calcification",
+   "Prolapse",
+   "Flail leaflet",
+   "Chordal rupture",
+   "Cleft",
+   "Mass or vegetation",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Mitral valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral valve: structural abnormality: describe 'Other'",
+  "section": "Mitral Valve",
+  "answer": "free text",
+  "answer_only_if": "[Mitral valve: structural abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Mitral valve: leaflet involved (select all that apply)",
+  "section": "Mitral Valve",
+  "options": [
+   "Anterior leaflet",
+   "Posterior leaflet",
+   "Both",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Mitral valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral valve: suspected etiology",
+  "section": "Mitral Valve",
+  "options": [
+   "Degenerative (myxomatous)",
+   "Degenerative (calcific)",
+   "Rheumatic",
+   "Endocarditis",
+   "Functional",
+   "Other",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Mitral valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral valve: suspected etiology: describe 'Other'",
+  "section": "Mitral Valve",
+  "answer": "free text",
+  "answer_only_if": "[Mitral valve: suspected etiology] CONTAINS \"Other\""
+ },
+ {
+  "column": "Mitral valve structural abnormalities: acuity of finding",
+  "section": "Mitral Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Mitral valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral valve abnormal motion: does this parameter need to be in the report?",
+  "section": "Mitral Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Mitral valve: abnormal motion (select all that apply)",
+  "section": "Mitral Valve",
+  "options": [
+   "Restricted leaflet motion",
+   "Prolapse",
+   "Flail",
+   "Systolic anterior motion",
+   "Diastolic doming",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Mitral valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral valve abnormal motion: acuity of finding",
+  "section": "Mitral Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Mitral valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral stenosis: does this parameter need to be in the report?",
+  "section": "Mitral Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Mitral stenosis severity",
+  "section": "Mitral Valve",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Mitral stenosis: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral stenosis: mechanism",
+  "section": "Mitral Valve",
+  "options": [
+   "Rheumatic",
+   "Degenerative (annular calcification)",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Mitral stenosis: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral stenosis: mechanism: describe 'Other'",
+  "section": "Mitral Valve",
+  "answer": "free text",
+  "answer_only_if": "[Mitral stenosis: mechanism] CONTAINS \"Other\""
+ },
+ {
+  "column": "Mitral stenosis: acuity of finding",
+  "section": "Mitral Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Mitral stenosis: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Mitral regurgitation",
+  "section": "Mitral Valve",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Mitral regurgitation severity",
+  "section": "Mitral Valve",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Trivial",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Mitral regurgitation: mechanism",
+  "section": "Mitral Valve",
+  "options": [
+   "Primary (degenerative)",
+   "Secondary (functional)",
+   "Mixed",
+   "Endocarditis",
+   "Rheumatic",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Mitral regurgitation] CONTAINS \"Present\""
+ },
+ {
+  "column": "Mitral regurgitation: mechanism: describe 'Other'",
+  "section": "Mitral Valve",
+  "answer": "free text",
+  "answer_only_if": "[Mitral regurgitation: mechanism] CONTAINS \"Other\""
+ },
+ {
+  "column": "Mitral regurgitation: acuity of finding",
+  "section": "Mitral Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Pulmonic valve structure",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Structurally normal",
+   "Structurally abnormal",
+   "Not well visualized",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pulmonic valve structure: acuity of finding",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Pulmonic valve structural abnormalities: does this parameter need to be in the report?",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Pulmonic valve: structural abnormality (select all that apply)",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Thickening",
+   "Calcification",
+   "Dysplastic leaflets",
+   "Mass or vegetation",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Pulmonic valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonic valve: structural abnormality: describe 'Other'",
+  "section": "Pulmonic Valve",
+  "answer": "free text",
+  "answer_only_if": "[Pulmonic valve: structural abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Pulmonic valve structural abnormalities: acuity of finding",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Pulmonic valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonic valve abnormal motion: does this parameter need to be in the report?",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Pulmonic valve: abnormal motion (select all that apply)",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Restricted leaflet motion",
+   "Doming",
+   "Flail",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Pulmonic valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonic valve abnormal motion: acuity of finding",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Pulmonic valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonic stenosis",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pulmonic stenosis severity",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pulmonic stenosis: acuity of finding",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Pulmonic regurgitation",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pulmonic regurgitation severity",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Trivial",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pulmonic regurgitation: acuity of finding",
+  "section": "Pulmonic Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Tricuspid valve structure",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Structurally normal",
+   "Structurally abnormal",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Tricuspid valve: number of leaflets",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Trileaflet",
+   "Bileaflet",
+   "Quadricuspid",
+   "Not determined",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Tricuspid valve structure: acuity of finding",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Tricuspid valve structural abnormalities: does this parameter need to be in the report?",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Tricuspid valve: structural abnormality (select all that apply)",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Leaflet thickening",
+   "Prolapse",
+   "Flail leaflet",
+   "Mass or vegetation",
+   "Ebstein anomaly",
+   "Lead-related leaflet impingement",
+   "Annular dilatation",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Tricuspid valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Tricuspid valve: structural abnormality: describe 'Other'",
+  "section": "Tricuspid Valve",
+  "answer": "free text",
+  "answer_only_if": "[Tricuspid valve: structural abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Tricuspid valve: suspected etiology",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Degenerative",
+   "Functional (annular dilatation)",
+   "Rheumatic",
+   "Endocarditis",
+   "Device lead related",
+   "Congenital",
+   "Other",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Tricuspid valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Tricuspid valve: suspected etiology: describe 'Other'",
+  "section": "Tricuspid Valve",
+  "answer": "free text",
+  "answer_only_if": "[Tricuspid valve: suspected etiology] CONTAINS \"Other\""
+ },
+ {
+  "column": "Tricuspid valve structural abnormalities: acuity of finding",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Tricuspid valve structural abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Tricuspid valve abnormal motion: does this parameter need to be in the report?",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Tricuspid valve: abnormal motion (select all that apply)",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Restricted leaflet motion",
+   "Prolapse",
+   "Flail",
+   "Doming",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Tricuspid valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Tricuspid valve abnormal motion: acuity of finding",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Tricuspid valve abnormal motion: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Tricuspid stenosis",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Tricuspid stenosis: acuity of finding",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Tricuspid regurgitation",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Tricuspid regurgitation severity",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Trivial",
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Massive",
+   "Torrential",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Tricuspid regurgitation: acuity of finding",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Right ventricular systolic pressure",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Normal",
+   "Elevated",
+   "Not estimable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Right ventricular systolic pressure: acuity of finding",
+  "section": "Tricuspid Valve",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Prosthetic or repaired valve: does this parameter need to be in the report?",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Prosthetic or repaired valve: position (select all that apply)",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Aortic",
+   "Mitral",
+   "Tricuspid",
+   "Pulmonic",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: type",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Mechanical",
+   "Bioprosthetic, surgical (stented)",
+   "Bioprosthetic, surgical (stentless)",
+   "Transcatheter valve",
+   "Annuloplasty ring",
+   "Surgical repair without ring",
+   "Edge-to-edge repair device",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: type: describe 'Other'",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "answer": "free text",
+  "answer_only_if": "[Prosthetic or repaired valve: type] CONTAINS \"Other\""
+ },
+ {
+  "column": "Prosthetic valve motion",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Normal",
+   "Restricted",
+   "Excessive (rocking, dehiscence)",
+   "Not well visualized",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: pathologic findings (select all that apply)",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "None",
+   "Leaflet thickening",
+   "Calcification",
+   "Pannus",
+   "Dehiscence",
+   "Paravalvular leak",
+   "Abnormal position",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: pathologic findings: describe 'Other'",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "answer": "free text",
+  "answer_only_if": "[Prosthetic or repaired valve: pathologic findings (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: masses",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "None",
+   "Thrombus",
+   "Vegetation",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: stenosis",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: regurgitation",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve regurgitation severity",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Trivial (physiologic)",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: regurgitation location",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Valvular (transvalvular)",
+   "Paravalvular",
+   "Both",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Prosthetic or repaired valve: acuity of finding",
+  "section": "Prosthetic Valves or Repaired Valves",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Prosthetic or repaired valve: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pericardium",
+  "section": "Pericardium",
+  "options": [
+   "Normal",
+   "Abnormal",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pericardial abnormality (select all that apply)",
+  "section": "Pericardium",
+  "options": [
+   "Thickening",
+   "Calcification",
+   "Cyst",
+   "Mass",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Pericardium] CONTAINS \"Abnormal\""
+ },
+ {
+  "column": "Pericardial abnormality: describe 'Other'",
+  "section": "Pericardium",
+  "answer": "free text",
+  "answer_only_if": "[Pericardial abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Pericardial abnormalities: acuity of finding",
+  "section": "Pericardium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Pericardial effusion",
+  "section": "Pericardium",
+  "options": [
+   "Absent",
+   "Present",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pericardial effusion size",
+  "section": "Pericardium",
+  "options": [
+   "Small",
+   "Medium",
+   "Large",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pericardial effusion: measurement (cm)",
+  "section": "Pericardium",
+  "options": [
+   "Less than 0.5 cm",
+   "0.5–0.9 cm",
+   "1.0–1.4 cm",
+   "1.5–1.9 cm",
+   "2.0–2.4 cm",
+   "2.5–2.9 cm",
+   "3.0 cm or more",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Pericardial effusion] CONTAINS \"Present\""
+ },
+ {
+  "column": "Pericardial effusion location",
+  "section": "Pericardium",
+  "options": [
+   "Circumferential",
+   "Localized near the LV",
+   "Localized near the RV",
+   "Localized near the LA",
+   "Localized near the RA",
+   "Transverse sinus",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pericardial effusion content or appearance",
+  "section": "Pericardium",
+  "options": [
+   "Hypoechoic (simple)",
+   "Fibrinous",
+   "Stranding",
+   "Adhesions",
+   "Clot",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Pericardial effusion: acuity of finding",
+  "section": "Pericardium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Tamponade physiology or constriction",
+  "section": "Pericardium",
+  "options": [
+   "Neither",
+   "Tamponade physiology",
+   "Constriction",
+   "Indeterminate",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Supporting findings (select all that apply)",
+  "section": "Pericardium",
+  "options": [
+   "Right atrial collapse",
+   "Right ventricular diastolic collapse",
+   "Significant respiratory variation of mitral inflow",
+   "Significant respiratory variation of tricuspid inflow",
+   "Dilated IVC without respiratory collapse",
+   "Septal bounce",
+   "None",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true
+ },
+ {
+  "column": "Tamponade physiology or constriction: acuity of finding",
+  "section": "Pericardium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Epicardial fat: does this parameter need to be in the report?",
+  "section": "Pericardium",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Epicardial fat: amount",
+  "section": "Pericardium",
+  "options": [
+   "Small",
+   "Moderate",
+   "Large",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Epicardial fat: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Epicardial fat: acuity of finding",
+  "section": "Pericardium",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Epicardial fat: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Aortic size",
+  "section": "Aorta",
+  "options": [
+   "Normal",
+   "Dilated",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Aortic size severity",
+  "section": "Aorta",
+  "options": [
+   "Mild",
+   "Moderate",
+   "Severe",
+   "Not applicable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Aorta: segments measured (select all that apply)",
+  "section": "Aorta",
+  "options": [
+   "Annulus",
+   "Sinuses of Valsalva",
+   "Sinotubular junction",
+   "Ascending aorta",
+   "Arch",
+   "Descending aorta",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true
+ },
+ {
+  "column": "Aorta: dilated segments (select all that apply)",
+  "section": "Aorta",
+  "options": [
+   "Annulus",
+   "Sinuses of Valsalva",
+   "Sinotubular junction",
+   "Ascending aorta",
+   "Arch",
+   "Descending aorta",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Aortic size] CONTAINS \"Dilated\""
+ },
+ {
+  "column": "Aortic size: acuity of finding",
+  "section": "Aorta",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Aorta: abnormalities",
+  "section": "Aorta",
+  "options": [
+   "None",
+   "Abnormal",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Aorta: abnormality (select all that apply)",
+  "section": "Aorta",
+  "options": [
+   "Atherosclerosis or plaque",
+   "Dissection flap",
+   "Intramural hematoma",
+   "Aneurysm",
+   "Coarctation",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Aorta: abnormalities] CONTAINS \"Abnormal\""
+ },
+ {
+  "column": "Aorta: abnormality: describe 'Other'",
+  "section": "Aorta",
+  "answer": "free text",
+  "answer_only_if": "[Aorta: abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Aorta: abnormality location (select all that apply)",
+  "section": "Aorta",
+  "options": [
+   "Aortic root",
+   "Sinotubular junction",
+   "Ascending aorta",
+   "Aortic arch",
+   "Descending thoracic aorta",
+   "Abdominal aorta",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Aorta: abnormalities] CONTAINS \"Abnormal\""
+ },
+ {
+  "column": "Aorta: abnormality location: describe 'Other'",
+  "section": "Aorta",
+  "answer": "free text",
+  "answer_only_if": "[Aorta: abnormality location (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Aorta abnormalities: acuity of finding",
+  "section": "Aorta",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Pulmonary artery size: does this parameter need to be in the report?",
+  "section": "Pulmonary Artery",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Pulmonary artery size",
+  "section": "Pulmonary Artery",
+  "options": [
+   "Normal",
+   "Dilated",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Pulmonary artery size: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonary artery size: acuity of finding",
+  "section": "Pulmonary Artery",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Pulmonary artery size: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonary artery other abnormalities: does this parameter need to be in the report?",
+  "section": "Pulmonary Artery",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Pulmonary artery: abnormality (select all that apply)",
+  "section": "Pulmonary Artery",
+  "options": [
+   "Thrombus or embolus",
+   "Stenosis",
+   "Mass",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Pulmonary artery other abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonary artery: abnormality: describe 'Other'",
+  "section": "Pulmonary Artery",
+  "answer": "free text",
+  "answer_only_if": "[Pulmonary artery: abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Pulmonary artery: abnormality location (select all that apply)",
+  "section": "Pulmonary Artery",
+  "options": [
+   "Main pulmonary artery",
+   "Bifurcation",
+   "Right pulmonary artery",
+   "Left pulmonary artery",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Pulmonary artery other abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Pulmonary artery: abnormality location: describe 'Other'",
+  "section": "Pulmonary Artery",
+  "answer": "free text",
+  "answer_only_if": "[Pulmonary artery: abnormality location (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Pulmonary artery other abnormalities: acuity of finding",
+  "section": "Pulmonary Artery",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Pulmonary artery other abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Inferior vena cava size",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Normal",
+   "Dilated",
+   "Small",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Inferior vena cava respiratory change",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Collapses more than 50%",
+   "Collapses less than 50%",
+   "No respiratory change",
+   "Not assessable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Estimated right atrial pressure",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "3 mmHg (0-5)",
+   "8 mmHg (5-10)",
+   "15 mmHg (10-20)",
+   "Not estimable",
+   "Cannot evaluate from present data"
+  ]
+ },
+ {
+  "column": "Inferior vena cava size and right atrial pressure: acuity of finding",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ]
+ },
+ {
+  "column": "Inferior vena cava masses or devices: does this parameter need to be in the report?",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Inferior vena cava: mass or device (select all that apply)",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Catheter",
+   "Device lead",
+   "Thrombus",
+   "Mass",
+   "Filter",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Inferior vena cava masses or devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Inferior vena cava: mass or device: describe 'Other'",
+  "section": "Inferior Vena Cava",
+  "answer": "free text",
+  "answer_only_if": "[Inferior vena cava: mass or device (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Inferior vena cava: mass or device location",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Intrahepatic IVC",
+   "IVC–right atrial junction",
+   "Extending into the right atrium",
+   "Infrahepatic IVC",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Inferior vena cava masses or devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Inferior vena cava: mass or device location: describe 'Other'",
+  "section": "Inferior Vena Cava",
+  "answer": "free text",
+  "answer_only_if": "[Inferior vena cava: mass or device location] CONTAINS \"Other\""
+ },
+ {
+  "column": "Inferior vena cava masses or devices: acuity of finding",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Inferior vena cava masses or devices: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Hepatic vein flow pattern: does this parameter need to be in the report?",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Hepatic vein flow pattern",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Normal",
+   "Systolic blunting",
+   "Systolic reversal",
+   "Expiratory diastolic flow reversal (constriction)",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Hepatic vein flow pattern: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Hepatic vein flow pattern: acuity of finding",
+  "section": "Inferior Vena Cava",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Hepatic vein flow pattern: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Extracardiac abnormalities: does this parameter need to be in the report?",
+  "section": "Extracardiac",
+  "options": [
+   "Yes",
+   "No"
+  ]
+ },
+ {
+  "column": "Extracardiac abnormality (select all that apply)",
+  "section": "Extracardiac",
+  "options": [
+   "Left pleural effusion",
+   "Right pleural effusion",
+   "Ascites",
+   "Lung abnormality",
+   "Abdominal abnormality",
+   "Neck abnormality",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "select_all_that_apply": true,
+  "answer_only_if": "[Extracardiac abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Extracardiac abnormality: describe 'Other'",
+  "section": "Extracardiac",
+  "answer": "free text",
+  "answer_only_if": "[Extracardiac abnormality (select all that apply)] CONTAINS \"Other\""
+ },
+ {
+  "column": "Extracardiac abnormality: size or severity",
+  "section": "Extracardiac",
+  "options": [
+   "Small",
+   "Moderate",
+   "Large",
+   "Not applicable",
+   "Other",
+   "Cannot evaluate from present data"
+  ],
+  "answer_only_if": "[Extracardiac abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ },
+ {
+  "column": "Extracardiac abnormality: size or severity: describe 'Other'",
+  "section": "Extracardiac",
+  "answer": "free text",
+  "answer_only_if": "[Extracardiac abnormality: size or severity] CONTAINS \"Other\""
+ },
+ {
+  "column": "Extracardiac abnormalities: acuity of finding",
+  "section": "Extracardiac",
+  "options": [
+   "Routine — no special prioritization",
+   "Significant — highlight in the summary; consider consultation or follow-up testing",
+   "Urgent — clinical action within hours; direct notification of the care team",
+   "Critical — threat to life; immediate verbal notification (within minutes)",
+   "Not applicable (finding absent or not evaluable)"
+  ],
+  "answer_only_if": "[Extracardiac abnormalities: does this parameter need to be in the report?] IS \"Yes\""
+ }
+]
